@@ -1,4 +1,12 @@
 
+/* Global utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 /* Icons */
 
 .right-arrow-icon {

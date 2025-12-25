@@ -15,27 +15,63 @@
      -->
     <link rel="icon" href="./assets/images/DSC02131.jpg" />
 		<title>Yakov's Portfolio</title>
-    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="description" content="My portfolio.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
 
-		<script defer src="./js/script.js"></script>
+		<!-- <script defer src="./js/script.js"></script> -->
 	</head>
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="./index.html">
-        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">Home Page</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
-        </a>
+      <div class="nav-left">
+        <div class="dropdown">
+          <a href="./index.html" class="nav-title-link">
+            <span class="nav-title">Home Page ▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+
+            <div class="submenu">
+              <a href="#ucsb-projects" class="submenu-title">
+                UCSB Projects ▸
+              </a>
+              <div class="submenu-menu">
+                <a href="./project-pages/capstone.html">Senior Capstone</a>
+                <a href="./project-pages/undergraduate-research.html">Undergraduate Research</a>
+                <a href="./project-pages/lego-robotics.html">Lego Robotics</a>
+                <a href="./project-pages/automatic-bike-shifter.html">Bike Shifter</a>
+                <a href="./project-pages/gaucho-racing.html">Gaucho Racing</a>
+              </div>
+            </div>
+
+            <div class="submenu">
+              <a href="#personal-projects" class="submenu-title">
+                Personal Projects ▸
+              </a>
+              <div class="submenu-menu">
+                <a href="./project-pages/fencing-lame-tester.html">Fencing Lamé Tester</a>
+                <a href="./project-pages/kumiko-lamp.html">Kumiko Lamp</a>
+                <a href="./project-pages/cardboard-cat-scratcher.html">Cat Scratcher</a>
+                <a href="./project-pages/fencing-electrical-tester.html">Fencing Testbox</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <a class="button" href="mailto:y_shur@ucsb.edu">
+        <span class="button-text">Contact Me</span>
       </a>
     </div>
+
+
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -66,9 +102,9 @@
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hey, I'm Yakov.</span>
-              <div class="body-text">I’m a fourth year undergraduate student studying Mechanical Engineering at UCSB. Check out some of my projects at the links below!</div>
+              <div class="body-text">I am a fourth year undergraduate student studying Mechanical Engineering at UCSB. Check out some of my projects at the links below!</div>
             </div>
-            <a class="button" id="my-work-link">
+            <a class="button" id="my-work-link" href="#ucsb-projects">
               <span class="button-text">Check out my projects</span> 
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -93,7 +129,7 @@
       </div> -->
 
       <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
+      <div id="ucsb-projects">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="header-text">My Projects at UCSB</span>
 
@@ -263,7 +299,7 @@
 
 
       <!-- PROJECTS / MY WORK SECTION -->
-      <div id="my-work-section">
+      <div id="personal-projects">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="header-text">My Personal Projects</span>
 

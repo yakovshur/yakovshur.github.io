@@ -70,7 +70,7 @@
           -->
         <div class="main-title">Fencing Testbox</div>
         <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <image class="project-header-image" src="../assets/images/fencing test box/all generations.jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +83,36 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">This is my main passion project to make an inexpensive electrical tester for fencing equipment, namely blades and body cords. I initially started this project because I wanted 
+            something to make my own work easier at the UCSB Fencing Club, where I was the armorer and repaired most things, but I kept going to learn new technologies for myself and maybe commercialize this as a 
+            product. Existing professional testers are very expensive for the purpose that they serve for student athletes, while the next best thing is a multimeter which is a hassle to use.
+          </div>
+          <div class="body-text">In fencing, there are three different types of blades: Foil, Epee, and Sabre. For these blades, there are two different types of body cords: Epee cords, and Foil/Sabre cords. 
+            Each kind has three wires, but one side of the wires has a different connection. Pictured below are the two kinds:
+          </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/fencing test box/body cords.png" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+
+          <div class="body-text">The two main faults a body cord can have is a faulty connection at a prong, or a break somewhere along the wire. Testing this is easy by looking for electrical continuity in the wire. 
+            With a multimeter, this can be done by looking at the resistance of the wire: very low resistance indicates a good connection, and very high resistance or no connection indicates a fault. However, this is 
+            time consuming and finicky, as a user has to manually hold the leads of a multimeter to the prongs of a wire. Testing blades works in a similar way, but will not be discussed because it is different for 
+            each weapon.
+          </div>
+
+          <div class="body-text">What my design accomplishes is streamlining the testing of all three wires in a body cord, so it can be done at the same time with one device. Additionally, my design integrates blade 
+            testing functionality so that a user wouldn't have to purchase a separate product for that purpose. Below are some commercially available products with prices. The product in the middle is what I am 
+            trying to emulate.
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/fencing test box/examples.png" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+          <div class="body-text">Below are images from over the course of the project showing the progression of my product.</div>
+
         </div>
       </div>
 
@@ -117,17 +145,63 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/fencing test box/cardboard proto.jpg" class="gallery-image">
+              <span class="image-caption">I started out by making a proof of concept in a cardboard box using spare parts from fencing sockets. This was crude, but was already making my work much easier.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/fencing test box/cardboard proto open.jpg" class="gallery-image">
+              <span class="image-caption">Instead of using a multimeter, an LED indicated an electrical connection. Though this isn't precise, it gets the job done.</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/first proto.jpg" class="gallery-image">
+              <span class="image-caption">This was my first 3D printed prototype. I experimented with a design that had sockets on three surfaces of the device which made it very compact, but settled on using just 
+                the top surface to facilitate moving over to using a PCB instead of hand soldering every component.
+              </span>
             </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/first proto open.jpg" class="gallery-image">
+              <span class="image-caption">This is the inside of the first 3D printed prototype. One of the issues with making a compact 3D circuit was that assembling it was annoying.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/second proto function.jpg" class="gallery-image">
+              <span class="image-caption">For my second prototype, I simplified the circuit and moved all the electrical connections to the top surface of the device. Shown above is how an epee body cord would be 
+                tested. Because all three LED's are illuminated, that indicates a good body cord. The two unlit LED's and empty sockets at the bottom are for blade testing.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/second proto open.jpg" class="gallery-image">
+              <span class="image-caption">This was the inside of the second prototype. Though this was still hand soldered, assembly was much easier than before. I still needed to resolve battery placement though.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/third proto.jpg" class="gallery-image">
+              <span class="image-caption">For the third prototype, I modified the housing by adding testing functionality for foil body cords.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/third proto open.jpg" class="gallery-image">
+              <span class="image-caption">On the inside of the housing of the third prototype, I added a dedicated place for the battery.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/pcb design.png" class="gallery-image">
+              <span class="image-caption">For the fourth and final prototype, I learned how to design and order a custom PCB using KiCad and PCB Way. I used the knowledge I gained from this phase of the project 
+                in future projects as well, such as the Automatic Bicycle Shifter.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/final tester open.jpg" class="gallery-image">
+              <span class="image-caption">This is the inside of the assembled final tester. Putting this together was a breeze compared to the previous iterations of this product, but it still had some minor 
+                fitment issues.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/fencing test box/final tester.jpg" class="gallery-image">
+              <span class="image-caption">This is the final assembled tester. I can edit this version forever trying to come up with a perfect design, but I think that this is a good stopping point with its current 
+                functionality. For a more advanced tester that can compete with professional equipment, I am looking into incorporating a microprocessor for displaying resistance values of wires being tested, as 
+                well as switching between different modes for different testing scenarios.
+              </span>
+            </div>
+
+
         </div>
       </div>
     </div>
