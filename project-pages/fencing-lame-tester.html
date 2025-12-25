@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">Fencing Lamé Tester</div>
+        <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
+        <image class="project-header-image" src="../assets/images/lame tester/part drawing.png">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +83,32 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">The purpose of this project was to design and fabricate a low-cost alternative for a conductive probe to test the electrical resistance of metal-woven jackets used in the sport 
+            of fencing. Commercially available probes which are used for this testing cost anywhere between $60 - $150, while the tester made for this project cost a fraction of that.The part was designed in 
+            Solidworks, and machined using a combination of a CNC and manual lathe in the COE machine shop under the guidance of Kirk Fields, P.E.. The point for electrical connectivity was manually tapped, and the probe was connected to a multimeter 
+            with a standard banana plug cable. The probe was used to check the resistance across different points of the fencing jackets by connecting the multimeter with an alligator clip on one end, and dragging 
+            the probe across the jackets to look for areas of increased or infinite resistance. Seen above is a part drawing of the probe.
+          </div>
+
+          <div class="body-text">Design features were motivated by ease of use of the probe, and by governing rules for standard fencing testing equipment. The governing body for international fencing is the The 
+            International Fencing Federation (FIE), which sets forth a set of rules for competitive and equipment control rules. Section m.28.5 of “Rules for Competitions Fencers’ Weapons and Equipment Control” 
+            states: “The electrical resistance measured between any two points of the lame material must not be greater than 5 ohms. The resistance will be measured by using a 500 g conductive metal weight which 
+            has a hemispherical end with a radius of 4 mm. This weight, placed on this end and moved about on the lamé, must maintain continuous contact with a maximum resistance of 5 ohms.” 
+          </div>
+
+          <div class="body-text"> The material selected for this project was 6061 Aluminum because of its affordability, ease of manufacturing, and high electrical conductivity. However, because this material is also 
+          relatively lightweight, the height of the probe would have had to be unreasonably high to achieve the standard 500 g weight, so a new target weight of 175 g was set. The reason for this was that this probe 
+          was meant for use at home or in a fencing club, not for armorers and equipment control administrators at a competition. Therefore, to maximize affordability and to lower production costs, choosing aluminum 
+          over a heavier material like stainless steel was justified.
+          </div>
+
+          <div class="body-text">While designing for a target weight of 175 g and a tip radius of 4 mm (about 0.16 in), the overall height was set to 3.1 in, and the diameter for the area to be held by was set to 
+            1.45 in. The height was selected based on ergonomic considerations, and the diameter was set based on the 1.5 in outer diameter of the stock material. The angle of the pointed section of the probe 
+            resulted from a line tangent to the radius of the tip and coincident with the OD of the grip. The connection point was initially designed for a M6x0.75 banana plug, but was later changed in favor of a 
+            standard M6x0.1 banana plug. The reason for having a removable connector was for increasing the longevity of the probe. Repeated insertion and removal of the plug without the threaded connector would 
+            wear down the probe, increasing the inner diameter of the hole and decreasing contact area for the wire. When the connector fails, a new one can be installed in its place.
+          </div>
+          
         </div>
       </div>
 
@@ -117,48 +141,41 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/lame tester/stock in lathe.png" class="gallery-image">
+              <span class="image-caption">After getting approval from the machine shop manager for my part drawing, he helped me write a program on a CNC lathe to make the part.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/lame tester/finished part.png" class="gallery-image">
+              <span class="image-caption">This was the part after the completed job on the CNC lathe. I used Scotch-Brite to get the smooth surface finish.</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lame tester/manual lathe.jpg" class="gallery-image">
+              <span class="image-caption">I finished the part on a manual lathe, where I faced the back side and drilled the hole for the banana socket. After that I manually tapped the hole.</span>
             </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lame tester/finished tester back.jpg" class="gallery-image">
+              <span class="image-caption">This is the finished tester with the drilled and tapped hole.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lame tester/lame testing.png" class="gallery-image">
+              <span class="image-caption">The probe was used to test fencing jackets at the UCSB Fencing Club. From 40 total jackets, 25 were found to be not suitable for competition, and 15 were found to be good 
+                for competition. The state of the jackets was also verified by historical use and observation: jackets that failed the probe test also did not register hits in practice, and had visible corrosion in 
+                areas that failed testing. Additionally, using the probe revealed jackets that had a resistance higher than 5 Ohms, but seemed to work in practice. </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lame tester/finished tester.jpg" class="gallery-image">
+              <span class="image-caption">I'm super happy with the result of this project. Not only was I able to make something cool, I also learned a lot about GDT, how to use a CNC Lathe, and I got to help 
+                my fencing club. Commerical testers can go for upwards of $60, and the product I ended up making cost roughly $6 by weight. Even the cost of the stock was $21, which was a third of the price of a 
+                commercial tester.
+              </span>
+            </div>
+
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

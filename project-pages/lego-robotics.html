@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">Lego Robotics</div>
+        <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
+        <image class="project-header-image" src="../assets/images/lego robots/roborat 2 final.jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +83,26 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">In this course, we learned how to design, build, and program autonomous robots to accomplish specific tasks. The bodies of the robots were made out of legos, and the basic 
+            electrical hardware included: DC motors, servos, break beam sensors, reflective sensors, range sensors, limit switches, light sensors, batteries, and an Arduino Uno with a motor shield. Though the 
+            Arduino is not a great platform for robots, its limited capabilities served as a good base for the projects, and actually led to lessons in how data is processed stored. Apart from learning to work with 
+            the afore mentioned hardware, working on the projects gave valubale lessons on brainstorming, concept selection, teamwork and communication.
+          </div>
+
+          <div class="gallery-image-container">
+            <img src="../assets/images/lego robots/gameboard.jpg" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+
+          <div class="body-text">Seen above is the layout of the board on which robots had to perform. On either side of the board is an LED panel, the illumination of which initiates the robot's program.
+            The surface of the board was painted white with black lines, and foam cubes were placed on the board depending on the project. Throughout the course there were three projects: obstacle avoidance, cube 
+            delivery, and the "RoboRat". Each project built upon the previous assignment, with new challenges for building a robot to accomplish each new task.
+          </div>
+
+          <div class="body-text">Below are images of the robots my partner and I made throughout the course.</div>
+
+
         </div>
       </div>
 
@@ -117,48 +135,88 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/lego robots/motor characterization.jpg" class="gallery-image">
+              <span class="image-caption">We had to calibrate all electronic hardware we used on our robot, and seen here is the calibration of our DC motors using the break beam sensors.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/lego robots/old motor setup.jpg" class="gallery-image">
+              <span class="image-caption">This is our initial motor setup, with a 1:5 gear ratio. The gear ratio ended up being much lower than what we needed for optimal performance, but it was 
+                a very compact design.
+              </span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/bump bot on board.jpg" class="gallery-image">
+              <span class="image-caption">This was our first robot, the bump bot. The robot was designed to drive forward until it hit an obstacle, and then turn and keep going like a rooomba. 
+                The two bumpers on the front of the robot were placed in front of limit switches, which acted as the sensors for detecting a collision.
+              </span>
             </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/bump bot side.jpg" class="gallery-image">
+              <span class="image-caption">Here is a side view of the bump bot. The limit switches were placed in the front of the robot, and a photoresistor was placed in the back for detecting the start light.
+              </span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/second bot proto good.jpg" class="gallery-image">
+              <span class="image-caption">The task of the second project was to make a delivery bot, which would move one foam cube from one side of the board to the other. Seen here is the first 
+                version of this robot, which used the chassis of the bump bot and had a four bar linkage claw actuated by a servo.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/chassis redo.jpg" class="gallery-image">
+              <span class="image-caption">After realizing there were too many issues with the old chassis, we scrapped it and started making a new one to accomodate a larger gear ratio and reflective sensors to be 
+                used for line following.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/new wormgear setup.jpg" class="gallery-image">
+              <span class="image-caption">The new drivetrain we ended up using for the rest of the course used worm gears to drive the wheels. This setup ended up reaching a gear ratio of 1:72, which allowed for 
+                much better directional control.
+              </span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/delivery bot.jpg" class="gallery-image">
+              <span class="image-caption">This was our final delivery bot. We decided to push the cube around because of its simplicity, and used a range sensor to determine if the robot had the cube. The robot also 
+                used another range sensor to detect walls in front of it, and two reflective sensors on its underside for line following.
+              </span>
+            </div>
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/final robot chassis w cubes.jpg" class="gallery-image">
+              <span class="image-caption">The task of the third project, the RoboRat was to collect as much "cheese" as possible on the gameboard and deposit it in the starting location of the robot. 
+                Seen here is the development of the first prototypes of this robot, which had a catching area under the chassis and arms to funnel the cheese in using servos.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/roborat 1 back.jpg" class="gallery-image">
+              <span class="image-caption">Shown here is the the final first prototype of the RoboRat. We added break beam sensors in the back of the robot to be used as encoders for the wheels, but this 
+                proved to be unreliable and difficult to integrate with line following.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/roborat 2 final.jpg" class="gallery-image">
+              <span class="image-caption"> This was our RoboRat. It used a range sensor to follow the perimeter of the gameboard, a reflective sensor to detect lines that it crossed, a servo to actuate an arm, 
+                and a break beam sensor to make calibrated 90 degree turns.
+              </span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/lego robots/roborat 2 disassembled.jpg" class="gallery-image">
+              <span class="image-caption">After finishing the last event, we had to take apart our robot and return all of our equipment. This course was one of the most fun classes I have taken in my major, but 
+                also one of, if not the most gruelling. I learned about mechanical design, mechatronic integration, and definitely a lot about making design choices and teamwork.
+              </span>
+            </div>
+
+
+
+
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

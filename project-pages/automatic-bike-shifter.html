@@ -90,8 +90,8 @@
             we selected it because of its practicality and feasibility; also because we could add on to it if we had the time. Once we started making prototypes, my first big 
             contribution was moving and redesigning the mount for electronics and the motor to fit the bottle cage mount of our bike. The reasoning behind this was the standard
              spacing of the screw holes would allow us to attach our prototype easily to our test bike, and to any bike in general. 
-             After that, I designed a circuit for all of our electrical components, built breadboard circuits to test our prototypes, and designed a custom PCB to be made by Dr. Marks, 
-             a lecturer and mentor in the Mechanical Engineering Department. Admittedly I broke our first PCB, so I worked with Dr. Trevor Marks to redesign it so that all the traces were on 
+             After that, I designed a circuit for all of our electrical components, built breadboard circuits to test our prototypes, and designed a custom PCB to be made by Dr. Trevor Marks, 
+             a lecturer and mentor in the Mechanical Engineering Department. Admittedly I broke our first PCB, so I worked with Dr. Marks to redesign it so that all the traces were on 
              just one side of the PCB for simpler soldering. Finally, I designed and made the laser-cut housing for buttons that would go on the handlebars of the bike. 
           </div>
 
@@ -128,18 +128,46 @@
                   - IMAGE_NAME: the name of the image file in assets/images
                   - IMAGE_CAPTION: to the caption of the image
             -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/bike shifter/Design Fair Poster (1).png" class="gallery-image">
+              <span class="image-caption">This is the poster we presented at the final project fair for the class. We didn't end up winning any awards, but many people were impressed with the reliability and packaging of our prototype.</span>
             </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/kicad pcb.png" class="gallery-image">
+              <span class="image-caption">This is the final PCB design. Given the limitations of the available PCB manufacturing tools, the design was adjusted to place all components on the back-side of the board, 
+                with only a few traces on the front.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/custom pcb.jpg" class="gallery-image">
+              <span class="image-caption">This is the PCB made my Dr. Marks.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/wire crimping.jpg" class="gallery-image">
+              <span class="image-caption">I soldered all the necessary header pins and JST connectors to the board. We used JST connectors for sensors and switches because it would allow for more convenient removal 
+                of high-risk components while maintaining a solid connection.
+              </span>
+            </div>
+              <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/mock fit housing.jpg" class="gallery-image">
+              <span class="image-caption">This is a test fit of all components in the housing.</span>
+            </div>
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/input housing cad.png" class="gallery-image">
+              <span class="image-caption">I designed the UI housing in Solidworks using the sheet metal tab-and-slot feature, and laser-cut it out of 1/8 inch wood sheets. It mounted to the handlebars of our 
+                bike with zip ties, and proved to be very ergonomic to use.</span>
+            </div>
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/bike shifter/input housing.png" class="gallery-image">
+              <span class="image-caption">The UI had four inputs: power, mode, shift up, and shift down. The mode switch changed the function of the shifter between manual, where the user could change gears 
+                independently, and automatic, where the Arduino would control gear selection.</span>
+            </div>
+
+            
         </div>
       </div>
     </div>
@@ -151,25 +179,25 @@
 
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
         <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
+      </a> -->
       <!-- 
         TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
         <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
+      </a> -->
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
       
         This should be the same across all pages.
       -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+      <!-- <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
+      </a> -->
     </div>
 
 	</body>

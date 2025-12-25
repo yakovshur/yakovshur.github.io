@@ -1,0 +1,155 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/DSC02131.jpg" />
+     <title>Yakov's Portfolio</title>
+    <meta name="description" content="My portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Home Page</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:y_shur@ucsb.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Kumiko Lamp</div>
+        <div class="body-text"></div>
+        <!-- <image class="project-header-image" src="../assets/images/kumiko lamp/two lamps.jpg"> -->
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">The goal of this project was to make a cool kumiko style lamp using the resources at the UCSB Makerspace. I made a design in Solidworks using the tab and slot feature, and laser cut 
+            the design out of eighth inch thick plywood. I bought a light base, bulb, and a power cord with a switch at my local hardware store, and put everything together at the UCSB Makerspace.
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/lamp cad.png" class="gallery-image">
+              <span class="image-caption">My design for the lamp shades was inspired by a mosaic I saw that looked like 3D cubes. Making the cubes look right was challenging but was also very rewarding.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/cutting lamp.jpg" class="gallery-image">
+              <span class="image-caption">I exported my part files as DXF files and got them to the laser cutter in the UCSB Makerspace.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/assembling lamp.jpg" class="gallery-image">
+              <span class="image-caption">I cut out and glued paper to the inside of the lamp shades to get the look of a traditional kumiko lamp.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/assembling lamp 3.jpg" class="gallery-image">
+              <span class="image-caption">After gluing the paper, I superglued the panels together.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/two lamps.jpg" class="gallery-image">
+              <span class="image-caption">I ended up making two lamps, one with a brown paper that had a red glow with the light, and one with white paper that had a more neutral tone with the light.
+                I also made the legs of the second lamp taller to make turning the light on easier.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/kumiko lamp/lit lamp.jpg" class="gallery-image">
+              <span class="image-caption">This is the finished second lamp, when I have the chance I will definitely try to make an even cooler lamp!</span>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+	</body>
+</html>

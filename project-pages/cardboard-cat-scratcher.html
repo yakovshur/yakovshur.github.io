@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">Cardboard Cat Scratcher</div>
+        <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
+        <image class="project-header-image" src="../assets/images/cat scratcher/main_cat.jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +83,8 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">During my time at Maker Nexus over the summer of 2024, I spent a lot of time at the laser cutter helping kids in summer camps make their designs, but I never got much time to make a 
+            project for myself. This project was a fun way for me to learn more about designing for laser cutting, and practice surface modeling in Solidworks. Below is my process for this project.</div>
         </div>
       </div>
 
@@ -117,48 +117,49 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/cat scratcher/solidworks cad.png" class="gallery-image">
+              <span class="image-caption">I started out by making a 3D model in Solidworks. The design is parametric, driven by a few key constraints like the depth of the bowl, and the width and length of the 
+                base. There are also holes in the base for dowels used for aligning the layers of cardboard.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/cat scratcher/sliced cad.png" class="gallery-image">
+              <span class="image-caption">I used a free software called Slicer for Fusion 360 to split the 3D model into layers equal to the thickness of cardboard I got from recycled shipping boxes. Coincidentally 
+                I got 100 layers, which I then exported as .dxf files to be cut out on the laser cutter at the UCSB Makerspace.</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cat scratcher/laser cutting.jpg" class="gallery-image">
+              <span class="image-caption">I spent a lot of time at the laser for all of the layers to be cut out. If I were to make this again, I would look for an 
+                alternative cutting method because the fringes in the cardboard retained a burned smell for quite a while. However, once it went away the result was better than I expected.</span>
             </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cat scratcher/arranged cardboard.jpg" class="gallery-image">
+              <span class="image-caption">After cutting out all of the slices, I arranged them by their assigned numbers to make assembly easier.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cat scratcher/gluing cardboard.jpg" class="gallery-image">
+              <span class="image-caption">I used wood glue to put all the slices together.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cat scratcher/finished gluing.jpg" class="gallery-image">
+              <span class="image-caption">After waiting for the glue to dry, the scratcher was very sturdy. However, it took quite a while of leaving it in front of a fan for the smell of burned cardboard to wane.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cat scratcher/main_cat.jpg" class="gallery-image">
+              <span class="image-caption">Once the smell had subsided even more, the new user of this scratcher started showing some interest. If I were to make this again, I would definitely use another tool to 
+                cut the cardboard, I would try to make the scratcher bigger (provided I have enough cardboard to do so).
+              </span>
+            </div>
+
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

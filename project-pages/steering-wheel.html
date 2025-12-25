@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">FSAE Steering Wheel</div>
+        <div class="body-text"></div>
+        <image class="project-header-image" src="../assets/images/steering wheel/GR25 Steering Wheel URCA Poster (1).png">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -81,10 +81,16 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">I led this group project, where my group and I received a $1000 grant to design and fabricate an ergonomic and high-strength steering wheel for an FSAE vehicle. FEA simulations 
+            were done in Solidworks to simulate stresses on the aluminum backplate of the assembly, which were also verified with hand calculations. The grips and electronics housing were 3D printed out of a clear 
+            resin, providing a neat aesthetic and functionality at the same time.</div>
+          <div class="body-text">For defining a load case, we used data given in an article by an FSAE Design Judge from designjudges.com, which collected data on maximum force applied on steering wheels. Based on 
+            FEA simulations using this load case, a 0.25 in thickness was selected for the Aluminum backplate, which provided a balance of strength and weight.</div>
+          <div class="body-text">My main contributions were conducting and analyzing FEA simulations, advising the design process for the resin shell and 3D printing prototypes for ergonomic testing, and testing 
+            hardware compatibility. Working with our advisor, Professor Robert McMeeking, to perform FEA simulations strengthened my knowledge of computational analysis and the math behind it.</div>
+          <div class="body-text">Below are some pictures from over the course of the project.</div>
         </div>
       </div>
 
@@ -117,48 +123,54 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/steering wheel/old steewhee.jpg" class="gallery-image">
+              <span class="image-caption">This is the steering wheel from the previous year's car. Two of the features we aimed at improving were reducing the assembly complexity, and improving its ergonomics. </span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/steering wheel/mock steewhee.jpg" class="gallery-image">
+              <span class="image-caption">In the early stages of prototyping we 3D printed our models to ensure they were ergonomic and could be easily assembled.</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/steewhee mock comparison.jpg" class="gallery-image">
+              <span class="image-caption">Once we finalized the design of the aluminum backplate for the steering wheel, we sent the design to SendCutSend for manufacturing. This image shows the comparison between the 
+                of the new and old steering wheels. </span>
             </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/steewhee mock back.jpg" class="gallery-image">
+              <span class="image-caption">This is the backside of the prototype seen on the left. The quick release on the steering wheel is a modified NRG 2.0 quick release. More on this later.</span>
+            </div>
+
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/steewhee adapter.jpg" class="gallery-image">
+              <span class="image-caption">I designed an adpater for the NRG quick release to allow for wires to pass through the connection to the steering column. This was manufactured by SendCutSend 
+                out of steel so it could be welded, and I tapped the holes for the quick release mounting. The channel for the wires was milled by Josh Bowie, head of the UCSB COE machine shop. </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/steewhee spacer.jpg" class="gallery-image">
+              <span class="image-caption">This is a test fit of the quick release adapter before welding.</span>
+            </div>
+
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/resin steewhee assembled.jpg" class="gallery-image">
+              <span class="image-caption">This is the final resin-printed steering wheel. Unfortunately, the display for the steering wheel was broken after its handoff to the electronics subteam and could 
+                not be integrated into the final assembly.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/steering wheel/resin steewhee in car.jpg" class="gallery-image">
+              <span class="image-caption">This is the resin steering wheel in the chassis during its final assembly.</span>
+            </div>
+
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

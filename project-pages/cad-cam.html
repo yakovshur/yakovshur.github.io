@@ -1,0 +1,204 @@
+
+
+<!-- 
+  IMPORTANT! 
+  
+  Keep this file unchanged to use as a template for all future project pages. 
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/DSC02131.jpg" />
+     <title>Yakov's Portfolio</title>
+    <meta name="description" content="My portfolio.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- 
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Home Page</span>
+        <!-- 
+          TODO - Change the email after 'mailto:' to your email address for contact 
+        
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:y_shur@ucsb.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">CAD/CAM Class</div>
+        <div class="body-text"></div>
+        <image class="project-header-image" src="../assets/images/cadcam class/desktopmill.jpg">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">In this course, we learned to program gcode using HSM to machine parts on a Haas Desktop Mill. The stock we used was polyurethane foam, which was good for learning CNC 
+            machining because it is hard enough to be “machined”, while being forgiving enough to not escalate basic mistakes. The Haas Desktop Mill is also a good machine for learning the basics of CNC. 
+            We learned to manually set up G54 offsets and tool length offsets, and manually changed tools with tool-specific collets. Some examples of the tools we used are a flat end mill, ball end mill, 
+            drill, edge finder, and a test indicator. Though some of the work was manual, the mill has a standard Haas controller, so the skills we learned for working on the desktop mill are transferable 
+            to other Haas machines.  
+          </div>
+
+          <div class="body-text">The two main pieces of software we used in this course were Flashcut, and Autodesk HSMWorks embedded in Solidworks. We used Flashcut CNC 4.55 in the first part of the course to 
+          visualize and check hand-written gcode. One of the first labs we did, and also one of my favorites, was writing gcode to write “UCSB” with a pen plotter in the mill. Instead of a tool in the collet, 
+          we used a pen to write on paper attached to a clipboard. Below is the toolpath generated in Flashcut, and the actual drawing made by the machine.</div>
+
+          <div class="gallery-image-container">
+            <img src="../assets/images/cadcam class/ucsb flashcut.png" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+          <div class="body-text">Once we learned more about writing gcode and about using the mill for actual milling operations, we wrote a few programs by hand for making 3D parts. Below is a toolpath generated 
+            by Flashcut for code I wrote by hand, and the resulting part made using the desktop mill.</div>
+
+          <div class="gallery-image-container">
+            <img src="../assets/images/cadcam class/simple flashcut.png" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+
+          <div class="body-text">Though using Flashcut was convenient for checking basic code, making more complex parts manually was quite slow, so we transitioned to using HSMWorks to generate toolpaths instead. 
+            In addition to being faster than handwriting code, we were also able to utilize the “Stock Simulation” feature in Solidworks to visualize how each machining operation would remove material from our stock. 
+            Seeing the virtual part in 3D as it was being “milled” in the simulations gave me a much better understanding of, for example, how the radius and geometry of a tool affects how operations are defined. 
+            Below is an example of the CAD of a part, and the physical part resulting from using code generated from HSMWorks.</div>
+
+          <div class="gallery-image-container">
+            <img src="../assets/images/cadcam class/hsm1.png" class="gallery-image">
+            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+          </div>
+
+        <div class="body-text">When comparing the results of using Flashcut to check hand written code, and using HSMWorks to generate toolpaths, the finished part is the same as the planned design in both cases, 
+          but I believe using HSM is more efficient for most 3D operations. In cases like simple facing and drilling operations, writing code by hand or using VPS on the Haas mill is understandable. However, the 
+          fine control over numerous aspects of machining and availability of features like stock simulation make using HSMWorks a favorable option for CNC machining tasks.</div>
+
+        <div class="body-text">Below is a list of parts I made in lab, following basic instructions and part drawings. Though the part had to be made specific to its design, we were free to use any operations we saw 
+          fit to make it, especially for later labs when we used HSMWorks. With every project, I got more familiar with the desktop mill, and learned about more efficient ways to machine parts.</div>
+
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 1.jpg" class="gallery-image">
+              <span class="image-caption">In this lab, we found the G54 offset, and used VPS (Visual Part Programming System) to first face the part with an end mill, and then drill four holes 
+                in a square pattern. Though we hadn’t written gcode, it was still super exciting to see milling in  action from pressing a few buttons for the first time.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 2.jpg" class="gallery-image">
+              <span class="image-caption">For this lab, we wrote gcode by hand to write “UCSB” with a pen attached to the toolhead of the mill. Because I decided to stylize the lettering, I didn’t have to use 
+                G02/G03 commands to make arcs which simplified the process. Instead, I focused on optimizing the movement of the toolhead to reduce “machining” time.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 3.jpg" class="gallery-image">
+              <span class="image-caption">In this lab, we found the G54 offset, and used VPS to first face the part with an end mill, and then drill five holes in a circular pattern. 
+                This was a step above the first VPS lab, and gave us time to practice writing gcode.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 4.jpg" class="gallery-image">
+              <span class="image-caption">This was the first lab in which we ran gcode we wrote by hand to mill a 3D part. As seen earlier, I ran my code in Flashcut before the lab to make sure that the features 
+                looked correct. The entire part was milled with one end mill with a facing operation, and separate operations for the protrusion, circular pocket, and bezel. Though my code made the part to spec, 
+                I ended up with unnecessary circular passes because I was worried about not covering the whole part when making the circular protrusion. This only increased "machining time".</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 5.jpg" class="gallery-image">
+              <span class="image-caption">This was the first lab for which we used HSM in Solidworks. The two pieces were designed to closely fit together, and we were free to choose how to design the part with 
+                the pocket such that the sharp corners of the protrusion would fit. My parts fit together, but loosely because I overshot my tolerance for the square pocket.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 7.jpg" class="gallery-image">
+              <span class="image-caption">This lab was the most challenging because it required two separate HSM jobs on the same part. The concave feature seen above was made first on the bottom face of the 
+                part, and the concave feature seen below was made second on the top face. For each job, two end mills were used for roughing and finishing: a flat end mill, and a ball end mill. </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/cadcam class/lab 6.jpg" class="gallery-image">
+              <span class="image-caption">The second job required more thought because exclusively using the ball end mill for the elliptical protrusion would not yield the sharp edge at its base. Therefore, 
+                after roughing out the overall shape with a 3D adaptive clearing operation, I used the flat end mill in a 2D contour operation to make the sharp edge.  Making this part was the most fulfilling 
+                because it took the most effort and ended up looking very nice. </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+	</body>
+</html>
