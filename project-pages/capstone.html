@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">Automatic Chessboard</div>
+        <div class="body-text">This is a work in progress with more updates to come in the future!</div>
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +83,23 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">The goal of this project is to make a chess board which will move pieces autonomously in response to voice commands and physical inputs. One of the problems the automatic chessboard 
+            will address is the obstacles that players with physical disabilities face at chess competitions. In this scenario, players have to interact with chess pieces in a timed environment, which can be 
+            difficult for those with motor disorders. By allowing players to make moves by using their voice, instead of relying on a human buffer, all parties involved achieve a smoother gaming experience. 
+          </div>
+          <div class="body-text">Research combined in-person and online interviews, competitive product analysis, patent review, and technical literature to define the direction of an automatic chessboard. Feedback 
+            from UCSB's Chess and Robotics Clubs, along with Chess.com coordinators, shaped key product needs, technical features, and target applications. Researching existing products like Chessup and Chessnut 
+            helped benchmark functionality and market positioning.
+          </div>
+          <div class="body-text">Based on these insights, three core concepts were prototyped: moving pieces with an electromagnet and permanent magnet, piece detection and identification with RFID hardware and Hall 
+            Effect sensors, and preliminary piece design.
+            Testing showed that both permanent magnets and electromagnets can reliably move pieces, Hall effect sensors outperform RFID for identification, and viable design parameters for chess pieces were 
+            established. These results informed a development roadmap focused on building a full gantry system, developing control software, and integrating all subsystems into a functional prototype.
+          </div>
+
+          <div class="body-text">Below are images from over the course of the project as of the time of writing.
+          </div>
+
         </div>
       </div>
 
@@ -117,48 +132,29 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/capstone/gantry.png" class="gallery-image">
+              <span class="image-caption">This is roughly what the gantry under the board will look like. The toolhead will have a magnet that will attract and pull pieces across the board.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/capstone/piece.png" class="gallery-image">
+              <span class="image-caption">This is what the cross section of a chess piece will look like. There will be a magnet in the piece which will be detected by a Hall Effect sensor under the board.</span>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/capstone/hall testing.png" class="gallery-image">
+              <span class="image-caption">This was our test setup for the hall effect sensors. By varying the height of the magnet above the sensor and measuring its ouput using an Arduino, we determined that 
+                using Hall Effect sensors is a viable solution to identifying pieces.
+              </span>
             </div>
+            <div class="gallery-image-container half-width">
+            <img src="../assets/images/capstone/push testing.png" class="gallery-image">
+            <span class="image-caption">This was our test setup for measuring the force needed to displace a piece using a permanent magnet. This helped inform us on what size and strength of magnet we would need 
+              to reliably move pieces.
+            </span>
         </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

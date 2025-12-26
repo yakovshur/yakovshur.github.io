@@ -131,6 +131,13 @@ body {
   height: auto;
 }
 
+.small-project-header-image {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
 #project-details {
   display: flex;
   flex-direction: column;
@@ -143,35 +150,49 @@ body {
   gap: 34px;
 }
 
-    /* Project Gallery */
+/* Project Gallery */
 
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+#project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
+.project-video {
+  display: block;
+  margin: 0 auto;
+  width: calc((75% - 16px) /1.5);
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.project-gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px 50px;
+}
 
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
+.gallery-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
+.gallery-image-container.half-width {
+  width: calc((75% - 16px) / 2.5);
+}
+
+.gallery-image-container.less-width {
+  width: calc((75% - 16px) / 1.5);
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
 
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */

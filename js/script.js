@@ -7,3 +7,17 @@
 //     ucsbProjects.scrollIntoView({ behavior: "smooth" });
 //   });
 // }
+
+
+document.querySelectorAll('.submenu-title').forEach(link => {
+  let tappedOnce = false;
+
+  link.addEventListener('click', e => {
+    if (!tappedOnce) {
+      e.preventDefault(); // stop navigation
+      tappedOnce = true;
+
+      setTimeout(() => tappedOnce = false, 500);
+    }
+  });
+});

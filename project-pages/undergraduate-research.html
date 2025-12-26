@@ -68,9 +68,13 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Project Name</div>
-        <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <div class="main-title">My Undergraduate Research</div>
+        <div class="body-text">
+          The work described in this page was done at the 
+          <a href="https://www.hawkeslab.com/" target="_blank" rel="noopener noreferrer"> UCSB Hawkes Lab
+          </a>, which focuses on soft robotics and control systems. This page is a work in progress, with more updates to come!
+        </div>        
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -83,8 +87,30 @@
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+
+          <div class="body-text">The first project I worked on was testing different configurations for strings on an inflatable arm. The goal for this was to quantify the force needed to 
+            accomplish lifting-related tasks of the arm, and minimize friction by optimizing string routing and selecting smooth tubing for the strings. As a part of this, I designed and 3D printed a base for 
+            the arm that could be fixed with clamps, and I also made a copy of the arm because the material of the arm degraded with repeated applications of tape. The arm was tested in a variety of 
+            configurations and tube arrangements with different masses attached to the end.
+          </div>
+          <div class="body-text">The goal of my second project was to make a jig for testing inflatable shoe pods and collecting data to be automatically processed in Matlab. I did this by designing an adapter for the 
+            linear rail guide of the force gauge. The adapter connected to four existing bolt holes, and was used to squish the pods using the force gauge to collect force data. Additionally, the internal pressure of 
+            the arm was measured using a pressure gauge, and these pressure readings were recorded by video.
+          </div>
+          <div class="body-text">My third project was improving the experimental setup of a tubular motor to be used for testing various sand jumper accessories. The most recent project I worked on at the time of 
+            writing was simulating a 2D coin flip. This was inspired by the paper on the 
+            <a href="https://la.disneyresearch.com/wp-content/uploads/Falling-with-Style-Sticking-the-Landing-by-Controlling-Spin-during-Ballistic-Flight-Paper.pdf" target="_blank" rel="noopener noreferrer"> 
+            Disney Brick</a>, and the paper on 
+            <a href="https://www.jstor.org/stable/2323340?origin=JSTOR-pdf" target="_blank" rel="noopener noreferrer"> The Probability of Heads</a>,
+            Heads. Both of these papers studied methods to predict the final orientation of a rotating object in freefall. In summary, the Disney Brick experienced freefall in the z axis (vertical direction) while 
+            rotating in the xy plane (horizontally); the objective of the brick was to slow down its rotational motion in order to land in a preferred position after some time. The brick was able to land correctly 
+            with different initial conditions using predictive control. The Probability of Heads paper was a more theoretical exploration of this concept, which in summary resulted in a neat graph that illustrated 
+            the result of a coin flip for various initial vertical and rotational speeds. 
+          </div>
+
+          <div class="body-text"> Below are images detailing my work described above.
+          </div>
+
         </div>
       </div>
 
@@ -117,17 +143,74 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/hawkes lab/mijail arm testing.jpg" class="gallery-image">
+              <span class="image-caption">This is an exmaple configuration in which the arm was tested. I measured the force needed to displace the tip of the arm with a known mass attached using a force gauge 
+                attached to a string leading to the member of the arm.
+              </span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/hawkes lab/linear rail.jpg" class="gallery-image">
+              <span class="image-caption">This is the linear rail used for controlling the motion of a force gauge.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/hawkes lab/linear rail mount 1 side.jpg" class="gallery-image">
+              <span class="image-caption">This is the mount I made for testing the inflatable shoe pods. Overall, the testing process was sped up significantly using my new setup.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/hawkes lab/motor mount two parts.jpg" class="gallery-image">
+              <span class="image-caption">This is the motor mount I made for the tubular motor. The two halves fit together with a loose fit, and are fixed with two set screws that go through brass inserts on the 
+                motor-half of the mount. Using the set screws and the white markings on the base of the mount, the motor can be rotated continuously or in 5 degree increments.
+              </span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/hawkes lab/motor mount monted low.jpg" class="gallery-image">
+              <span class="image-caption">This is the tubular motor mounted above the sand bed.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/hawkes lab/funny graph.png" class="gallery-image">
+              <span class="image-caption">This is the figure from the Probability of Heads paper. According to the paper, “The curves which separate the sets H and T, the preimages of heads and tails in the u, w 
+                plane of initial conditions, are shown …. The lowest strip, adjacent to the axes, belongs to H, the next to T and so on alternately.”
+              </span>
             </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <video class="project-video" controls>
+                <source src="../assets/images/hawkes lab/CoinFlipEuler.mp4" type="video/mp4">
+              </video>
+
+              <span class="image-caption"> This is an animation for a coin flipping in real time from a simulation I made in Matlab. The simulation was run for many combinations of intial rotational and vertical 
+                velocity.
+              </span>
             </div>
+
+            <div class="gallery-image-container less-width">
+              <img src="../assets/images/hawkes lab/CoinFlipNormal.png" class="gallery-image">
+              <span class="image-caption">I was able to faithfully recreate the figure from the coin flip paper, demonstrating that the development of this simulation was possible. Additionally, I added a 
+                colormapping which related the angle of the coin to its initial conditions for flipping. This was done by tracking the final angle of the coin when it “fell” on the ground.
+              </span>
+            </div>
+
+            <div class="gallery-image-container">
+              <video class="project-video" controls>
+                <source src="../assets/images/hawkes lab/CoinFlipControlExclamationMark.mp4" type="video/mp4">
+              </video>
+
+              <span class="image-caption"> The next stage was to add two masses to the coin, and develop a controller that would extend the masses in order to land on only one side consistently, regardless of intial 
+                conditions. This works on the principle of conservation of angular momentum, similar to how gymnasts and figure skaters are able to slow themselves down after a spinning move by extending their arms. 
+                The controller I made starts predicting the final landing angle of the coin after it reaches its apex height, and extends the masses when the predicted angle is close to the desired final angle. The 
+                video shown above demonstrates this functionality.
+              </span>
+            </div>
+
+            <div class="gallery-image-container less-width">
+              <img src="../assets/images/hawkes lab/CoinFlipBangBangControl.png" class="gallery-image">
+              <span class="image-caption">A bang bang controller was successfully able to make the coin land on only one side for most initial conditions. Interestingly, it was not able to change the result of 
+                the coin toss for low initial rotational speeds, and low initial vertical speeds. The reason for this is that the masses are only able to move out with a bang bang controller, and so the coin is only 
+                able to slow down its rotation. If the coin already starts rotating slowly or does not gain enough height to impactfully influence the rotation due to “slow” initial conditions, the controller is 
+                unable to change the result with certainty.
+              </span>
+            </div>
+
+
         </div>
       </div>
     </div>
