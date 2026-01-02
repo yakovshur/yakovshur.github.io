@@ -38,23 +38,55 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <div class="nav-left">
+      <div class="dropdown">
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Home Page</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
+        <!-- Home -->
+        <a href="/" class="nav-title-link">
+          <span class="nav-title">Home Page ▾</span>
         </a>
-      </a>
+
+        <div class="dropdown-menu">
+
+          <!-- UCSB Projects -->
+          <div class="submenu">
+            <a href="#ucsb-projects" class="submenu-title">
+              UCSB Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./capstone.html">Senior Capstone</a>
+              <a href="./undergraduate-research.html">Undergraduate Research</a>
+              <a href="./lego-robotics.html">Lego Robotics</a>
+              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+              <a href="./cad-cam.html">CAD/CAM Class</a>
+              <a href="./mechanical-testing.html">Materials Testing</a>
+              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="submenu">
+            <a href="#personal-projects" class="submenu-title">
+              Personal Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <!-- Contact -->
+    <a class="button" href="mailto:y_shur@ucsb.edu">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -117,12 +149,12 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/cat scratcher/solidworks cad.png" class="gallery-image">
+              <img src="../assets/images/cat scratcher/solidworks cad.jpg" class="gallery-image">
               <span class="image-caption">I started out by making a 3D model in Solidworks. The design is parametric, driven by a few key constraints like the depth of the bowl, and the width and length of the 
                 base. There are also holes in the base for dowels used for aligning the layers of cardboard.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/cat scratcher/sliced cad.png" class="gallery-image">
+              <img src="../assets/images/cat scratcher/sliced cad.jpg" class="gallery-image">
               <span class="image-caption">I used a free software called Slicer for Fusion 360 to split the 3D model into layers equal to the thickness of cardboard I got from recycled shipping boxes. Coincidentally 
                 I got 100 layers, which I then exported as .dxf files to be cut out on the laser cutter at the UCSB Makerspace.</span>
             </div>

@@ -36,25 +36,57 @@
 		<script defer src="../js/script.js"></script>
 	</head>
 	<body>
-    <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <div class="nav-left">
+      <div class="dropdown">
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Home Page</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
+        <!-- Home -->
+        <a href="/" class="nav-title-link">
+          <span class="nav-title">Home Page ▾</span>
         </a>
-      </a>
+
+        <div class="dropdown-menu">
+
+          <!-- UCSB Projects -->
+          <div class="submenu">
+            <a href="#ucsb-projects" class="submenu-title">
+              UCSB Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./capstone.html">Senior Capstone</a>
+              <a href="./undergraduate-research.html">Undergraduate Research</a>
+              <a href="./lego-robotics.html">Lego Robotics</a>
+              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+              <a href="./cad-cam.html">CAD/CAM Class</a>
+              <a href="./mechanical-testing.html">Materials Testing</a>
+              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="submenu">
+            <a href="#personal-projects" class="submenu-title">
+              Personal Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <!-- Contact -->
+    <a class="button" href="mailto:y_shur@ucsb.edu">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
+
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -70,7 +102,7 @@
           -->
         <div class="main-title">Automatic Bike Shifter</div>
         <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
-        <image class="project-header-image" src="../assets/images/bike shifter/Design Fair Poster (1).png">
+        <image class="project-header-image" src="../assets/images/bike shifter/Design Fair Poster (1).jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -133,7 +165,7 @@
               <span class="image-caption">This is the poster we presented at the final project fair for the class. We didn't end up winning any awards, but many people were impressed with the reliability and packaging of our prototype.</span>
             </div> -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/bike shifter/kicad pcb.png" class="gallery-image">
+              <img src="../assets/images/bike shifter/kicad pcb.jpg" class="gallery-image">
               <span class="image-caption">This is the final PCB design. Given the limitations of the available PCB manufacturing tools, the design was adjusted to place all components on the back-side of the board, 
                 with only a few traces on the front.
               </span>
@@ -155,14 +187,14 @@
 
 
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/bike shifter/input housing cad.png" class="gallery-image">
+              <img src="../assets/images/bike shifter/input housing cad.jpg" class="gallery-image">
               <span class="image-caption">I designed the UI housing in Solidworks using the sheet metal tab-and-slot feature, and laser-cut it out of 1/8 inch wood sheets. It mounted to the handlebars of our 
                 bike with zip ties, and proved to be very ergonomic to use.</span>
             </div>
 
 
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/bike shifter/input housing.png" class="gallery-image">
+              <img src="../assets/images/bike shifter/input housing.jpg" class="gallery-image">
               <span class="image-caption">The UI had four inputs: power, mode, shift up, and shift down. The mode switch changed the function of the shifter between manual, where the user could change gears 
                 independently, and automatic, where the Arduino would control gear selection.</span>
             </div>

@@ -38,23 +38,55 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <div class="nav-left">
+      <div class="dropdown">
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Home Page</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
+        <!-- Home -->
+        <a href="/" class="nav-title-link">
+          <span class="nav-title">Home Page ▾</span>
         </a>
-      </a>
+
+        <div class="dropdown-menu">
+
+          <!-- UCSB Projects -->
+          <div class="submenu">
+            <a href="#ucsb-projects" class="submenu-title">
+              UCSB Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./capstone.html">Senior Capstone</a>
+              <a href="./undergraduate-research.html">Undergraduate Research</a>
+              <a href="./lego-robotics.html">Lego Robotics</a>
+              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+              <a href="./cad-cam.html">CAD/CAM Class</a>
+              <a href="./mechanical-testing.html">Materials Testing</a>
+              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="submenu">
+            <a href="#personal-projects" class="submenu-title">
+              Personal Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <!-- Contact -->
+    <a class="button" href="mailto:y_shur@ucsb.edu">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -107,7 +139,7 @@
             trying to emulate.
           </div>
           <div class="gallery-image-container">
-            <img src="../assets/images/fencing test box/examples.png" class="gallery-image">
+            <img src="../assets/images/fencing test box/examples.jpg" class="gallery-image">
             <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
           </div>
 
@@ -182,7 +214,7 @@
               <span class="image-caption">On the inside of the housing of the third prototype, I added a dedicated place for the battery.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/fencing test box/pcb design.png" class="gallery-image">
+              <img src="../assets/images/fencing test box/pcb design.jpg" class="gallery-image">
               <span class="image-caption">For the fourth and final prototype, I learned how to design and order a custom PCB using KiCad and PCB Way. I used the knowledge I gained from this phase of the project 
                 in future projects as well, such as the Automatic Bicycle Shifter.
               </span>

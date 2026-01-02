@@ -38,23 +38,55 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <div class="nav-left">
+      <div class="dropdown">
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Home Page</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
+        <!-- Home -->
+        <a href="/" class="nav-title-link">
+          <span class="nav-title">Home Page ▾</span>
         </a>
-      </a>
+
+        <div class="dropdown-menu">
+
+          <!-- UCSB Projects -->
+          <div class="submenu">
+            <a href="#ucsb-projects" class="submenu-title">
+              UCSB Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./capstone.html">Senior Capstone</a>
+              <a href="./undergraduate-research.html">Undergraduate Research</a>
+              <a href="./lego-robotics.html">Lego Robotics</a>
+              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+              <a href="./cad-cam.html">CAD/CAM Class</a>
+              <a href="./mechanical-testing.html">Materials Testing</a>
+              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="submenu">
+            <a href="#personal-projects" class="submenu-title">
+              Personal Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <!-- Contact -->
+    <a class="button" href="mailto:y_shur@ucsb.edu">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -70,7 +102,7 @@
           -->
         <div class="main-title">Fencing Lamé Tester</div>
         <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
-        <image class="project-header-image" src="../assets/images/lame tester/part drawing.png">
+        <image class="project-header-image" src="../assets/images/lame tester/part drawing.jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -141,11 +173,11 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/lame tester/stock in lathe.png" class="gallery-image">
+              <img src="../assets/images/lame tester/stock in lathe.jpg" class="gallery-image">
               <span class="image-caption">After getting approval from the machine shop manager for my part drawing, he helped me write a program on a CNC lathe to make the part.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/lame tester/finished part.png" class="gallery-image">
+              <img src="../assets/images/lame tester/finished part.jpg" class="gallery-image">
               <span class="image-caption">This was the part after the completed job on the CNC lathe. I used Scotch-Brite to get the smooth surface finish.</span>
             </div>
             <div class="gallery-image-container half-width">
@@ -158,7 +190,7 @@
               <span class="image-caption">This is the finished tester with the drilled and tapped hole.</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/lame tester/lame testing.png" class="gallery-image">
+              <img src="../assets/images/lame tester/lame testing.jpg" class="gallery-image">
               <span class="image-caption">The probe was used to test fencing jackets at the UCSB Fencing Club. From 40 total jackets, 25 were found to be not suitable for competition, and 15 were found to be good 
                 for competition. The state of the jackets was also verified by historical use and observation: jackets that failed the probe test also did not register hits in practice, and had visible corrosion in 
                 areas that failed testing. Additionally, using the probe revealed jackets that had a resistance higher than 5 Ohms, but seemed to work in practice. </span>

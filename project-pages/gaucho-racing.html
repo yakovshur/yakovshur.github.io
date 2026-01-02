@@ -38,23 +38,55 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
-        <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+    <div class="nav-left">
+      <div class="dropdown">
 
-          (this should be the same across all pages)
-         -->
-        <span class="nav-title">Home Page</span>
-        <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-        <a class="button" href="mailto:y_shur@ucsb.edu">
-          <span class="button-text">Contact Me</span>
+        <!-- Home -->
+        <a href="/" class="nav-title-link">
+          <span class="nav-title">Home Page ▾</span>
         </a>
-      </a>
+
+        <div class="dropdown-menu">
+
+          <!-- UCSB Projects -->
+          <div class="submenu">
+            <a href="#ucsb-projects" class="submenu-title">
+              UCSB Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./capstone.html">Senior Capstone</a>
+              <a href="./undergraduate-research.html">Undergraduate Research</a>
+              <a href="./lego-robotics.html">Lego Robotics</a>
+              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+              <a href="./cad-cam.html">CAD/CAM Class</a>
+              <a href="./mechanical-testing.html">Materials Testing</a>
+              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            </div>
+          </div>
+
+          <!-- Personal Projects -->
+          <div class="submenu">
+            <a href="#personal-projects" class="submenu-title">
+              Personal Projects ▸
+            </a>
+            <div class="submenu-menu">
+              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+    <!-- Contact -->
+    <a class="button" href="mailto:y_shur@ucsb.edu">
+      <span class="button-text">Contact Me</span>
+    </a>
+  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
@@ -132,33 +164,7 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/instagram.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
-        <image src="../assets/icons/twitter.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
-        <image src="../assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-    </div>
 
 	</body>
 </html>

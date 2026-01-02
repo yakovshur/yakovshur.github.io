@@ -244,6 +244,10 @@ body {
 
 
 
+/* ============================= */
+/* NAVBAR + DROPDOWN ANIMATION  */
+/* ============================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -260,22 +264,41 @@ body {
   position: relative;
 }
 
+/* ---------- MAIN DROPDOWN ---------- */
 .dropdown-menu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
+
   background: white;
   min-width: 220px;
   border: 1px solid #ddd;
   z-index: 1000;
+
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+/* Desktop hover */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
 }
 
-/* Submenu */
+/* Mobile open state */
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ---------- SUBMENUS ---------- */
 .submenu {
   position: relative;
 }
@@ -293,20 +316,37 @@ body {
   background-color: #f2f2f2;
 }
 
-
-/* Flyout menu */
+/* Flyout */
 .submenu-menu {
-  display: none;
   position: absolute;
   top: 0;
   left: 100%;
+
   background: white;
   min-width: 220px;
   border: 1px solid #ddd;
+
+  opacity: 0;
+  transform: translateX(10px);
+  pointer-events: none;
+
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-.submenu:hover .submenu-menu {
-  display: block;
+/* Desktop hover */
+@media (hover: hover) {
+  .submenu:hover .submenu-menu {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+}
+
+/* Mobile open state */
+.submenu.open .submenu-menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
 }
 
 .submenu-menu a {
