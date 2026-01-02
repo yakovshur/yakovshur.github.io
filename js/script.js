@@ -11,27 +11,38 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const isTouch = window.matchMedia("(hover: none)").matches;
-
-  if (!isTouch) return; // desktop uses CSS hover only
+  if (!isTouch) return;
 
   const dropdown = document.querySelector(".dropdown");
   const homeLink = dropdown.querySelector(".nav-title-link");
 
-  /* Toggle main dropdown */
+  /* HOME LINK:
+     - First tap opens menu
+     - Second tap navigates */
   homeLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    dropdown.classList.toggle("open");
+    if (!dropdown.classList.contains("open")) {
+      e.preventDefault();
+      dropdown.classList.add("open");
+    }
+    // else: allow navigation normally
   });
 
-  /* Toggle submenus */
+  /* SUBMENUS:
+     - First tap opens submenu
+     - Second tap navigates */
   document.querySelectorAll(".submenu-title").forEach(title => {
+    const parent = title.parentElement;
+
     title.addEventListener("click", (e) => {
-      e.preventDefault();
-      title.parentElement.classList.toggle("open");
+      if (!parent.classList.contains("open")) {
+        e.preventDefault();
+        parent.classList.add("open");
+      }
+      // else: allow navigation
     });
   });
 
-  /* Close menus when tapping outside */
+  /* Tap outside closes everything */
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".dropdown")) {
       dropdown.classList.remove("open");

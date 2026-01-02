@@ -15,23 +15,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
 /* Main Page Layout */
-
 #main-content {
   margin: 225px 425px;
   display: flex;
   flex-direction: column;
   gap: 96px;
+  align-items: flex-start; /* default for desktop */
 }
 
-
-
-
 /* Portfolio Header */
-
 #portfolio-header {
   display: flex;
   gap: 20px;
@@ -57,11 +50,7 @@ body {
   flex-basis: 50%;
 }
 
-
-
-
 /* About Section */
-
 #about-section {
   display: flex;
   flex-direction: column;
@@ -74,11 +63,7 @@ body {
   gap: 34px;
 }
 
-
-
-
 /* Project Section */
-
 #my-work-section {
   display: flex;
   flex-direction: column;
@@ -89,37 +74,32 @@ body {
   display: flex;
   gap: 34px 16px;
   flex-wrap: wrap;
+  justify-content: flex-start; /* default for desktop */
 }
 
-    /* Project Cards */
+/* Project Cards */
+.project-card {
+  max-width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
-    .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
+.project-card-text-container {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
+}
 
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px
-    }
-
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;   /* 👈 show full image */
-      object-position: center;
-      background-color: #ffffff; /* or white, transparent, etc */
-    }
-
-
-
-
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #ffffff;
+}
 
 /* Project Pages */
-
 #project-header {
   display: flex;
   flex-direction: column;
@@ -151,7 +131,6 @@ body {
 }
 
 /* Project Gallery */
-
 #project-gallery {
   display: flex;
   flex-direction: column;
@@ -194,60 +173,9 @@ body {
   height: auto;
 }
 
-
-/* Extra Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1600px) {
-  #main-content {
-    margin: 225px 275px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and below) */
-@media only screen and (max-width: 1200px) {
-  #main-content {
-    margin: 225px 175px;
-  }
-}
-
-/* Large devices (laptops/desktops, 1000px and below) */
-@media only screen and (max-width: 1000px) {
-  #main-content {
-    margin: 225px 75px;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 800px and below) */
-@media only screen and (max-width: 800px) {
-  #main-content {
-    margin: 150px 50px;
-  }
-
-  #portfolio-header {
-    flex-direction: column;
-  }
-
-  .project-card {
-    max-width: calc((100% - 16px) / 2);
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
-  #main-content {
-    margin: 125px 20px;
-  }
-
-  .project-card {
-    max-width: 100%;
-  }
-}
-
-
-
 /* ============================= */
 /* NAVBAR + DROPDOWN ANIMATION  */
 /* ============================= */
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -264,25 +192,20 @@ body {
   position: relative;
 }
 
-/* ---------- MAIN DROPDOWN ---------- */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-
   background: white;
   min-width: 220px;
   border: 1px solid #ddd;
   z-index: 1000;
-
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
-
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Desktop hover */
 @media (hover: hover) {
   .dropdown:hover .dropdown-menu {
     opacity: 1;
@@ -291,14 +214,13 @@ body {
   }
 }
 
-/* Mobile open state */
 .dropdown.open .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-/* ---------- SUBMENUS ---------- */
+/* Submenus */
 .submenu {
   position: relative;
 }
@@ -316,24 +238,19 @@ body {
   background-color: #f2f2f2;
 }
 
-/* Flyout */
 .submenu-menu {
   position: absolute;
   top: 0;
   left: 100%;
-
   background: white;
   min-width: 220px;
   border: 1px solid #ddd;
-
   opacity: 0;
   transform: translateX(10px);
   pointer-events: none;
-
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
-/* Desktop hover */
 @media (hover: hover) {
   .submenu:hover .submenu-menu {
     opacity: 1;
@@ -342,7 +259,6 @@ body {
   }
 }
 
-/* Mobile open state */
 .submenu.open .submenu-menu {
   opacity: 1;
   transform: translateX(0);
@@ -359,4 +275,100 @@ body {
 
 .submenu-menu a:hover {
   background-color: #f2f2f2;
+}
+
+/* ============================= */
+/* RESPONSIVE / MOBILE CENTERING */
+/* ============================= */
+
+/* Extra Extra large devices */
+@media only screen and (max-width: 1600px) {
+  #main-content {
+    margin: 225px 275px;
+  }
+}
+
+/* Extra large devices */
+@media only screen and (max-width: 1200px) {
+  #main-content {
+    margin: 225px 175px;
+  }
+}
+
+/* Large devices */
+@media only screen and (max-width: 1000px) {
+  #main-content {
+    margin: 225px 75px;
+  }
+}
+
+/* Small devices (800px and below) */
+@media only screen and (max-width: 800px) {
+  #main-content {
+    margin: 150px auto; /* centers horizontally */
+    padding: 0 20px;
+    align-items: center; /* center children flex items */
+  }
+
+  #portfolio-header {
+    flex-direction: column;
+    align-items: center; /* center text & images */
+  }
+
+  #portfolio-header-text-container,
+  #portfolio-header-image-container {
+    flex-basis: auto;
+    text-align: center;
+  }
+
+  .projects-container {
+    justify-content: center; /* center project cards */
+  }
+
+  .project-card {
+    max-width: 80%;
+  }
+
+  h1, h2, h3, p {
+    text-align: center; /* center headings/text */
+  }
+}
+
+/* Extra small devices (600px and below) */
+@media only screen and (max-width: 600px) {
+  #main-content {
+    margin: 125px auto;
+    max-width: 500px;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .project-card {
+    max-width: 90%;
+  }
+
+  .gallery-image-container,
+  .gallery-image-container.less-width,
+  .gallery-image-container.half-width {
+    width: 80%;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* Responsive videos */
+@media only screen and (max-width: 800px) {
+  .project-video {
+    width: 100%;       /* full width */
+    max-width: 600px;  /* optional, prevents it from being too big on tablets */
+    height: auto;      /* maintain aspect ratio */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-video {
+    width: 100%;       /* full width for small phones */
+    max-width: 100%;   /* let it fill container */
+    height: auto;
+  }
 }
