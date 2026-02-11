@@ -113,36 +113,87 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">Project Overview</div>
         <div class="project-details-content">
-          <div class="body-text">The purpose of this project was to design and fabricate a low-cost alternative for a conductive probe to test the electrical resistance of metal-woven jackets used in the sport 
-            of fencing. Commercially available probes which are used for this testing cost anywhere between $60 - $150, while the tester made for this project cost a fraction of that.The part was designed in 
-            Solidworks, and machined using a combination of a CNC and manual lathe in the COE machine shop under the guidance of Kirk Fields, P.E.. The point for electrical connectivity was manually tapped, and the probe was connected to a multimeter 
-            with a standard banana plug cable. The probe was used to check the resistance across different points of the fencing jackets by connecting the multimeter with an alligator clip on one end, and dragging 
-            the probe across the jackets to look for areas of increased or infinite resistance. Seen above is a part drawing of the probe.
+
+          <div class="body-text">
+            Designed and machined a low-cost conductive probe for testing electrical 
+            resistance of fencing lamé jackets. Intended as an affordable alternative 
+            to $60-$150 commercial probes while maintaining compliance with FIE testing geometry.
           </div>
 
-          <div class="body-text">Design features were motivated by ease of use of the probe, and by governing rules for standard fencing testing equipment. The governing body for international fencing is the The 
-            International Fencing Federation (FIE), which sets forth a set of rules for competitive and equipment control rules. Section m.28.5 of “Rules for Competitions Fencers’ Weapons and Equipment Control” 
-            states: “The electrical resistance measured between any two points of the lame material must not be greater than 5 ohms. The resistance will be measured by using a 500 g conductive metal weight which 
-            has a hemispherical end with a radius of 4 mm. This weight, placed on this end and moved about on the lamé, must maintain continuous contact with a maximum resistance of 5 ohms.” 
-          </div>
+          <!-- DESIGN REQUIREMENTS -->
+          <div class="subheader-text">Design Requirements</div>
 
-          <div class="body-text"> The material selected for this project was 6061 Aluminum because of its affordability, ease of manufacturing, and high electrical conductivity. However, because this material is also 
-          relatively lightweight, the height of the probe would have had to be unreasonably high to achieve the standard 500 g weight, so a new target weight of 175 g was set. The reason for this was that this probe 
-          was meant for use at home or in a fencing club, not for armorers and equipment control administrators at a competition. Therefore, to maximize affordability and to lower production costs, choosing aluminum 
-          over a heavier material like stainless steel was justified.
-          </div>
+          <table class="requirements-table">
+            <tr>
+              <th>Requirement</th>
+              <th>Target</th>
+              <th>Rationale</th>
+            </tr>
+            <tr>
+              <td>Tip geometry</td>
+              <td>4 mm hemispherical radius</td>
+              <td>FIE m.28.5 specification</td>
+            </tr>
+            <tr>
+              <td>Electrical resistance</td>
+              <td>&lt; 5 Ω across lamé</td>
+              <td>International competition standard</td>
+            </tr>
+            <tr>
+              <td>Weight</td>
+              <td>175 g (target)</td>
+              <td>Club-use alternative to 500 g official weight</td>
+            </tr>
+            <tr>
+              <td>Connection</td>
+              <td>Standard banana plug interface</td>
+              <td>Compatibility with multimeters</td>
+            </tr>
+            <tr>
+              <td>Cost</td>
+              <td>&lt; Commercial alternatives</td>
+              <td>Accessibility for clubs / home use</td>
+            </tr>
+          </table>
 
-          <div class="body-text">While designing for a target weight of 175 g and a tip radius of 4 mm (about 0.16 in), the overall height was set to 3.1 in, and the diameter for the area to be held by was set to 
-            1.45 in. The height was selected based on ergonomic considerations, and the diameter was set based on the 1.5 in outer diameter of the stock material. The angle of the pointed section of the probe 
-            resulted from a line tangent to the radius of the tip and coincident with the OD of the grip. The connection point was initially designed for a M6x0.75 banana plug, but was later changed in favor of a 
-            standard M6x0.1 banana plug. The reason for having a removable connector was for increasing the longevity of the probe. Repeated insertion and removal of the plug without the threaded connector would 
-            wear down the probe, increasing the inner diameter of the hole and decreasing contact area for the wire. When the connector fails, a new one can be installed in its place.
-          </div>
-          
+          <!-- CONSIDERATIONS / TRADE-OFFS -->
+          <div class="subheader-text">Key Considerations & Trade-offs</div>
+
+          <ul class="body-text">
+            <li><strong>500 g (FIE standard) vs reduced mass:</strong> Full compliance increases size and material cost; 175 g sufficient for club diagnostics.</li>
+            <li><strong>Aluminum vs Stainless Steel:</strong> Steel improves mass and durability but increases machining time and cost.</li>
+            <li><strong>Fixed connector vs threaded insert:</strong> Direct press-fit reduces parts but decreases long-term durability.</li>
+            <li><strong>Ergonomics vs mass target:</strong> Increasing height raises weight but compromises usability.</li>
+          </ul>
+
+          <!-- DOWN SELECTION -->
+          <div class="subheader-text">Down-Selection Rationale</div>
+
+          <ul class="body-text">
+            <li>Selected 6061 aluminum for machinability, cost, and adequate electrical conductivity.</li>
+            <li>Accepted reduced 175 g mass for non-competition use to avoid excessive height increase.</li>
+            <li>Designed 4 mm hemispherical tip to maintain geometric compliance with FIE rule m.28.5.</li>
+            <li>Implemented threaded M6 banana plug interface to improve serviceability and longevity.</li>
+            <li>Used stock diameter (1.5 in) to reduce material waste and simplify turning operations.</li>
+          </ul>
+
+          <!-- BUILD / MANUFACTURING / VALIDATION -->
+          <div class="subheader-text">Build, Manufacturing & Validation</div>
+
+          <ul class="body-text">
+            <li>Modeled in SolidWorks with controlled mass properties to hit 175 g target.</li>
+            <li>Machined using CNC + manual lathe in COE machine shop.</li>
+            <li>Hemispherical tip formed and finished to maintain consistent contact surface.</li>
+            <li>Manually tapped threaded interface for replaceable banana connector.</li>
+            <li>Validated by measuring resistance across multiple lamé jackets using multimeter and alligator clip.</li>
+            <li>Confirmed consistent contact and resistance measurements during sliding contact testing.</li>
+          </ul>
+
         </div>
       </div>
+
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
