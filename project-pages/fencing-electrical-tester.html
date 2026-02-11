@@ -113,40 +113,86 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">Project Overview</div>
         <div class="project-details-content">
-          <div class="body-text">This is my main passion project to make an inexpensive electrical tester for fencing equipment, namely blades and body cords. I initially started this project because I wanted 
-            something to make my own work easier at the UCSB Fencing Club, where I was the armorer and repaired most things, but I kept going to learn new technologies for myself and maybe commercialize this as a 
-            product. Existing professional testers are very expensive for the purpose that they serve for student athletes, while the next best thing is a multimeter which is a hassle to use.
-          </div>
-          <div class="body-text">In fencing, there are three different types of blades: Foil, Epee, and Sabre. For these blades, there are two different types of body cords: Epee cords, and Foil/Sabre cords. 
-            Each kind has three wires, but one side of the wires has a different connection. Pictured below are the two kinds:
-          </div>
-          <div class="small-project-header-image">
-            <img src="../assets/images/fencing test box/body cords.jpg" class="gallery-image">
-            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
+
+          <div class="body-text">
+            Low-cost electrical continuity tester for fencing body cords and blades. 
+            Designed to replace multimeter-based testing with a single-purpose, fast, 
+            field-deployable tool suitable for student clubs and armorers.
           </div>
 
+          <!-- DESIGN REQUIREMENTS -->
+          <div class="subheader-text">Design Requirements</div>
 
-          <div class="body-text">The two main faults a body cord can have is a faulty connection at a prong, or a break somewhere along the wire. Testing this is easy by looking for electrical continuity in the wire. 
-            With a multimeter, this can be done by looking at the resistance of the wire: very low resistance indicates a good connection, and very high resistance or no connection indicates a fault. However, this is 
-            time consuming and finicky, as a user has to manually hold the leads of a multimeter to the prongs of a wire. Testing blades works in a similar way, but will not be discussed because it is different for 
-            each weapon.
-          </div>
+          <table class="requirements-table">
+            <tr>
+              <th>Requirement</th>
+              <th>Target</th>
+              <th>Rationale</th>
+            </tr>
+            <tr>
+              <td>Test body cords</td>
+              <td>Foil / Sabre / Epee</td>
+              <td>Cover all competition weapons</td>
+            </tr>
+            <tr>
+              <td>Test blades</td>
+              <td>Continuity + isolation</td>
+              <td>Common failure modes during competition</td>
+            </tr>
+            <tr>
+              <td>User interface</td>
+              <td>LED-based pass/fail</td>
+              <td>Fast diagnosis, no interpretation</td>
+            </tr>
+            <tr>
+              <td>Cost</td>
+              <td>&lt; $30 BOM</td>
+              <td>Accessible to student clubs</td>
+            </tr>
+            <tr>
+              <td>Portability</td>
+              <td>Handheld, battery powered</td>
+              <td>Use at practice and tournaments</td>
+            </tr>
+          </table>
 
-          <div class="body-text">What my design accomplishes is streamlining the testing of all three wires in a body cord, so it can be done at the same time with one device. Additionally, my design integrates blade 
-            testing functionality so that a user wouldn't have to purchase a separate product for that purpose. Below are some commercially available products with prices. The product in the middle is what I am 
-            trying to emulate.
-          </div>
-          <div class="gallery-image-container">
-            <img src="../assets/images/fencing test box/examples.jpg" class="gallery-image">
-            <!-- <span class="image-caption">Give your image a caption. People love context.</span> -->
-          </div>
+          <!-- CONSIDERATIONS / TRADE-OFFS -->
+          <div class="subheader-text">Key Considerations & Trade-offs</div>
 
-          <div class="body-text">Below are images from over the course of the project showing the progression of my product.</div>
+          <ul class="body-text">
+            <li><strong>Multimeter vs Dedicated Tester:</strong> Multimeters are flexible but slow and error-prone for repetitive testing.</li>
+            <li><strong>LED indication vs numeric resistance:</strong> LEDs reduce resolution but dramatically improve speed and usability.</li>
+            <li><strong>Hand-wired vs PCB:</strong> Hand wiring enabled rapid prototyping; PCB improved reliability and assembly.</li>
+            <li><strong>Compact enclosure vs assembly access:</strong> Early compact designs increased assembly difficulty.</li>
+          </ul>
+
+          <!-- DOWN SELECTION -->
+          <div class="subheader-text">Down-Selection Rationale</div>
+
+          <ul class="body-text">
+            <li>Selected LED-based continuity detection over resistance display for speed and robustness.</li>
+            <li>Moved all connectors to a single face to enable PCB integration.</li>
+            <li>Chose 3D printed enclosure to allow rapid iteration and low-volume production.</li>
+            <li>Finalized on PCB-based design to reduce wiring errors and assembly time.</li>
+          </ul>
+
+          <!-- BUILD / TEST / VALIDATION -->
+          <div class="subheader-text">Build, Testing & Validation</div>
+
+          <ul class="body-text">
+            <li>First Prototype: Cardboard enclosure, hand-wired, validated concept feasibility.</li>
+            <li>Second Prototype: First 3D printed housing; revealed assembly and wiring complexity issues.</li>
+            <li>Third Prototype: Improved internal layout and battery placement.</li>
+            <li>Final Prototype: Custom PCB designed in KiCad and fabricated via PCBWay.</li>
+            <li>Validated functionality using known-good and faulty body cords and blades.</li>
+            <li>Identified remaining fitment issues suitable for Rev B enclosure changes.</li>
+          </ul>
 
         </div>
       </div>
+
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
