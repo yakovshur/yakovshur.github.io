@@ -101,8 +101,8 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Gaucho Racing FSAE</div>
-        <div class="body-text">This page is still under construction.</div>
-        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
+        <!-- <div class="body-text">This page is still under construction.</div> -->
+        <image class="project-header-image" src="../assets/images/gaucho racing/gr25.jpg">
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -113,53 +113,101 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">Program Overview</div>
         <div class="project-details-content">
-          <!-- <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div> -->
-          <!-- <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div> -->
+
+          <div class="body-text">
+            Formula SAE electric vehicle development team member contributing to 
+            chassis manufacturability, cost documentation, steering system fabrication, 
+            and structural compliance. Served in both technical and organizational roles.
+          </div>
+
+          <!-- TECHNICAL CONTRIBUTIONS -->
+          <div class="subheader-text">Technical Contributions</div>
+
+          <ul class="body-text">
+            <li><strong>Chassis Manufacturability:</strong> Coordinated with steel supplier to ensure weldment geometry and tube specifications were producible and compliant before order release.</li>
+            <li>Generated detailed part drawings and BOMs from SolidWorks weldments to support fabrication and assembly schedule.</li>
+            <li><strong>Structural Equivalency (SES):</strong> Designed and documented tube inserts to meet FSAE structural equivalency requirements.</li>
+            <li>Mentored new members in SolidWorks modeling and drawing standards for chassis development.</li>
+            <li><strong>Steering Wheel:</strong> Designed and fabricated final steering wheel assembly (see dedicated project page).</li>
+            <li><strong>Seat Concept:</strong> Designed composite seat using mechanically tested laminate from materials project (ergonomics package concept, not implemented).</li>
+          </ul>
+
+          <!-- COST ENGINEERING -->
+          <div class="subheader-text">Cost & Competition Engineering</div>
+
+          <ul class="body-text">
+            <li>Managed $40,000+ FSAE cost report spanning dozens of assemblies.</li>
+            <li>Researched FSAE cost rules and developed documentation guidelines for all subteams.</li>
+            <li>Trained members on proper submission through official online cost system.</li>
+            <li>Improved competition scoring at Michigan event through complete and accurate documentation.</li>
+            <li>Implemented system-level cost tracking to align design decisions with scoring strategy.</li>
+          </ul>
+
+          <!-- LEADERSHIP -->
+          <div class="subheader-text">Leadership & Operations</div>
+
+          <ul class="body-text">
+            <li>Served as Team Secretary.</li>
+            <li>Organized meetings, secured campus facilities, and maintained internal communication cadence.</li>
+            <li>Supported cross-functional coordination between chassis, powertrain, and business subteams.</li>
+          </ul>
+
+          <!-- ENGINEERING THEMES -->
+          <div class="subheader-text">Engineering Themes Demonstrated</div>
+
+          <ul class="body-text">
+            <li>Design for Manufacturability (DFM)</li>
+            <li>Supplier coordination and production planning</li>
+            <li>Rule-driven design compliance</li>
+            <li>System-level cost engineering</li>
+            <li>Technical mentorship and documentation standards</li>
+          </ul>
+
         </div>
       </div>
+
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
         <div class="subheader-text">Image Gallery</div>
         <div class="project-gallery-content">
-            <!-- 
-              TODO
 
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gaucho racing/vr3 bubble example.jpg" class="gallery-image">
+            <span class="image-caption">Supplier-facing chassis drawing with bubbles to ensure manufacturable tube geometry.</span>
+          </div>
 
-              Full Width Image:
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gaucho racing/vr3 1.jpg" class="gallery-image">
+            <span class="image-caption">Iterative chassis weldment refinement to resolve manufacturability and compliance constraints.</span>
+          </div>
 
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gaucho racing/ses example.jpg" class="gallery-image">
+            <span class="image-caption">Structural Equivalency (SES) tube insert documentation supporting rule compliance.</span>
+          </div>
 
-              Half Width Image: 
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/steering wheel/resin steewhee in car.jpg" class="gallery-image">
+            <span class="image-caption">Final steering wheel assembly integrated into vehicle (see dedicated project page).</span>
+          </div>
 
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/mechanical testing/vacuum bagging 2.jpg" class="gallery-image">
+            <span class="image-caption">Vacuum-bag fabrication of composite sandwich panel used for seat concept validation.</span>
+          </div>
 
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <!-- <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div> -->
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/gaucho racing/ergo seat.jpg" class="gallery-image">
+            <span class="image-caption">Early-stage composite seat concept developed for driver ergonomics package.</span>
+          </div>
+
+
+
+
         </div>
       </div>
     </div>
