@@ -1,192 +1,480 @@
-
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    <!-- 
-      TODO
+  <head>
+    <meta charset="utf-8">
 
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
-     <link rel="icon" href="../assets/images/DSC02131.jpg" />
-     <title>Yakov's Portfolio</title>
-    <meta name="description" content="My portfolio.">
+    <link rel="icon" href="../assets/images/DSC02131.jpg" />
+    <title>Yakov's Portfolio</title>
+    <meta name="description" content="Knightly: Automatic Chessboard - Senior Capstone Project">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/utilities.css">
 
-		<script defer src="../js/script.js"></script>
-	</head>
-	<body>
-    <!-- NAVBAR -->
+    <script defer src="../js/script.js"></script>
+  </head>
+
+  <body>
+
+    <!-- NAVIGATION -->
     <div class="navbar">
-    <div class="nav-left">
-      <div class="dropdown">
+      <div class="nav-left">
+        <div class="dropdown">
 
-        <!-- Home -->
-        <a href="/" class="nav-title-link">
-          <span class="nav-title">Home Page ▾</span>
-        </a>
+          <!-- Home -->
+          <a href="/" class="nav-title-link">
+            <span class="nav-title">Home Page ▾</span>
+          </a>
 
-        <div class="dropdown-menu">
+          <div class="dropdown-menu">
 
-          <!-- UCSB Projects -->
-          <div class="submenu">
-            <a href="#ucsb-projects" class="submenu-title">
-              UCSB Projects ▸
-            </a>
-            <div class="submenu-menu">
-              <a href="./capstone.html">Senior Capstone</a>
-              <a href="./undergraduate-research.html">Undergraduate Research</a>
-              <a href="./lego-robotics.html">Lego Robotics</a>
-              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
-              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
-              <a href="./cad-cam.html">CAD/CAM Class</a>
-              <a href="./mechanical-testing.html">Materials Testing</a>
-              <a href="./gaucho-racing.html">Gaucho Racing</a>
+            <!-- UCSB Projects -->
+            <div class="submenu">
+              <a href="#ucsb-projects" class="submenu-title">
+                UCSB Projects ▸
+              </a>
+
+              <div class="submenu-menu">
+                <a href="./capstone.html">Senior Capstone</a>
+                <a href="./undergraduate-research.html">Undergraduate Research</a>
+                <a href="./lego-robotics.html">Lego Robotics</a>
+                <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+                <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+                <a href="./cad-cam.html">CAD/CAM Class</a>
+                <a href="./mechanical-testing.html">Materials Testing</a>
+                <a href="./gaucho-racing.html">Gaucho Racing</a>
+              </div>
             </div>
-          </div>
 
-          <!-- Personal Projects -->
-          <div class="submenu">
-            <a href="#personal-projects" class="submenu-title">
-              Personal Projects ▸
-            </a>
-            <div class="submenu-menu">
-              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
-              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
-              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
-              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            <!-- Personal Projects -->
+            <div class="submenu">
+              <a href="#personal-projects" class="submenu-title">
+                Personal Projects ▸
+              </a>
+
+              <div class="submenu-menu">
+                <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+                <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+                <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+                <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
+
+      <!-- Contact -->
+      <a class="button" href="mailto:y_shur@ucsb.edu">
+        <span class="button-text">Contact Me</span>
+      </a>
     </div>
 
-    <!-- Contact -->
-    <a class="button" href="mailto:y_shur@ucsb.edu">
-      <span class="button-text">Contact Me</span>
-    </a>
-  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
+      <!-- ========================================================= -->
       <!-- PROJECT HEADER -->
+      <!-- ========================================================= -->
+
       <div id="project-header">
-          <!-- 
-            TODO
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Automatic Chessboard</div>
-        <div class="body-text">This is a work in progress with more updates to come in the future!</div>
-        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
+        <div class="main-title">Knightly: Automatic Chessboard</div>
+
+        <div class="body-text">
+          An autonomous chessboard developed by a five-person engineering team,
+          combining magnetic piece detection, a CoreXY gantry, embedded
+          electronics, and a Raspberry Pi to detect, plan, and physically
+          execute chess moves.
+        </div>
+
+        <!-- YOUR PHOTO: Final Knightly board hero image -->
+        <image
+          class="project-header-image"
+          src="../assets/images/capstone/Knightly Poster.jpg"
+          alt="Knightly automatic chessboard">
       </div>
 
-      <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
+      <!-- ========================================================= -->
+      <!-- PROJECT WEBSITE -->
+      <!-- ========================================================= -->
+
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+
+        <div class="subheader-text">Explore Knightly</div>
+
         <div class="project-details-content">
-          <div class="body-text">The goal of this project is to make a chess board which will move pieces autonomously in response to voice commands and physical inputs. One of the problems the automatic chessboard 
-            will address is the obstacles that players with physical disabilities face at chess competitions. In this scenario, players have to interact with chess pieces in a timed environment, which can be 
-            difficult for those with motor disorders. By allowing players to make moves by using their voice, instead of relying on a human buffer, all parties involved achieve a smoother gaming experience. 
-          </div>
-          <div class="body-text">Research combined in-person and online interviews, competitive product analysis, patent review, and technical literature to define the direction of an automatic chessboard. Feedback 
-            from UCSB's Chess and Robotics Clubs, along with Chess.com coordinators, shaped key product needs, technical features, and target applications. Researching existing products like Chessup and Chessnut 
-            helped benchmark functionality and market positioning.
-          </div>
-          <div class="body-text">Based on these insights, three core concepts were prototyped: moving pieces with an electromagnet and permanent magnet, piece detection and identification with RFID hardware and Hall 
-            Effect sensors, and preliminary piece design.
-            Testing showed that both permanent magnets and electromagnets can reliably move pieces, Hall effect sensors outperform RFID for identification, and viable design parameters for chess pieces were 
-            established. These results informed a development roadmap focused on building a full gantry system, developing control software, and integrating all subsystems into a functional prototype.
+
+          <div class="body-text">
+            Knightly was developed as an open-source senior capstone project,
+            with the goal of creating a physical chessboard capable of
+            autonomously detecting and moving pieces.
           </div>
 
-          <div class="body-text">Below are images from over the course of the project as of the time of writing.
+          <div class="body-text">
+            For the full project documentation, including detailed CAD,
+            electronics, software, and design information, visit the
+            Knightly project website.
+          </div>
+
+          <div style="margin-top: 20px;">
+            <a class="button"
+               href="https://andrewy.wang/knightly/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="button-text">Visit the Knightly Project Website →</span>
+            </a>
           </div>
 
         </div>
       </div>
 
-      <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!-- 
-              TODO
 
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+      <!-- ========================================================= -->
+      <!-- PROJECT OVERVIEW -->
+      <!-- ========================================================= -->
 
-              Full Width Image:
+      <div id="project-details">
 
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
+        <div class="subheader-text">Project Overview</div>
 
-              Half Width Image: 
+        <div class="project-details-content">
 
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
+          <div class="body-text">
+            Knightly was my senior capstone project at UC Santa Barbara.
+            The goal was to create a physical chessboard that could detect
+            player moves, calculate its own moves, and autonomously move
+            pieces across the board.
+          </div>
 
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/capstone/gantry.jpg" class="gallery-image">
-              <span class="image-caption">This is roughly what the gantry under the board will look like. The toolhead will have a magnet that will attract and pull pieces across the board.</span>
+          <div class="body-text">
+            One motivation for the project was accessibility. Voice-controlled
+            and automated piece movement could allow players with physical
+            disabilities to interact with a physical chessboard without
+            requiring another person to move pieces for them. The system also
+            provides a platform for interactive and remotely connected chess
+            applications.
+          </div>
+
+          <div class="body-text">
+            The final prototype integrated board-state detection, chess
+            software, path planning, motion control, and a touchscreen
+            interface into a single system.
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- PROJECT FACTS -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">Project Details</div>
+
+        <div class="project-details-content">
+
+          <div class="body-text">
+            <strong>Project:</strong> ME 189C Senior Capstone
+          </div>
+
+          <div class="body-text">
+            <strong>Team:</strong> 5-person engineering team
+          </div>
+
+          <div class="body-text">
+            <strong>Role:</strong> Project Lead
+          </div>
+
+          <div class="body-text">
+            <strong>Primary Tools:</strong> SolidWorks, C++, Raspberry Pi,
+            STM32, Arduino, GRBL, Hall-effect sensors, CoreXY motion system
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- MY ROLE -->
+      <!-- ========================================================= -->
+
+        <div id="project-details">
+            <div class="subheader-text">My Role</div>
+            <div class="project-details-content">
+                <ul class="body-text">
+                    <li>Served as project lead for a five-person engineering team.</li>
+                    <li>Coordinated development and integration across the mechanical, electrical, and software subsystems.</li>
+                    <li>Designed and assembled the CoreXY gantry and custom mechanical components.</li>
+                    <li>Created SolidWorks CAD models and drawings for the motion system.</li>
+                    <li>Integrated the gantry and motion-control system with the rest of the chessboard.</li>
+                </ul>
             </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/capstone/piece.jpg" class="gallery-image">
-              <span class="image-caption">This is what the cross section of a chess piece will look like. There will be a magnet in the piece which will be detected by a Hall Effect sensor under the board.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/capstone/hall testing.jpg" class="gallery-image">
-              <span class="image-caption">This was our test setup for the hall effect sensors. By varying the height of the magnet above the sensor and measuring its ouput using an Arduino, we determined that 
-                using Hall Effect sensors is a viable solution to identifying pieces.
-              </span>
-            </div>
-            <div class="gallery-image-container half-width">
-            <img src="../assets/images/capstone/push testing.jpg" class="gallery-image">
-            <span class="image-caption">This was our test setup for measuring the force needed to displace a piece using a permanent magnet. This helped inform us on what size and strength of magnet we would need 
-              to reliably move pieces.
+        </div>
+
+
+      <!-- ========================================================= -->
+      <!-- HOW IT WORKS -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">How It Works</div>
+
+        <div class="project-details-content">
+
+            <ul class="body-text">
+                <li>Hall-effect sensors beneath the board detect the magnetic fields from the chess pieces.</li>
+                <li>An STM32 processes the sensor signals and communicates the detected board state to the Raspberry Pi.</li>
+                <li>The Raspberry Pi manages the chess game, computer-player logic, path planning, touchscreen interface, and communication with the hardware controllers.</li>
+                <li>An Arduino Uno running GRBL controls the CoreXY gantry.</li>
+            </ul>
+
+          <!-- YOUR IMAGE: System architecture / block diagram -->
+          <div class="gallery-image-container less-width">
+            <img
+              src="../assets/images/capstone/system architecture.jpg"
+              class="gallery-image"
+              alt="Knightly system architecture">
+            <span class="image-caption">
+              System architecture showing the interaction between the
+              Raspberry Pi, detection electronics, and gantry controller.
             </span>
+          </div>
+
         </div>
       </div>
+
+
+      <!-- ========================================================= -->
+      <!-- COREXY GANTRY -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">CoreXY Gantry</div>
+
+        <div class="project-details-content">
+
+        <ul class="body-text">
+            <li>The CoreXY gantry was made to translate software commands into physical chess moves.</li>
+            <li>Designed custom components in SolidWorks and assembled the motion system around NEMA 17 stepper motors, GT2 belts and pulleys, and linear rods and bearings.</li>
+        </ul>
+
+          <!-- YOUR IMAGE: Gantry CAD -->
+          <div class="gallery-image-container less-width">
+            <img
+              src="../assets/images/capstone/gantry cad.png"
+              class="gallery-image"
+              alt="CoreXY gantry CAD">
+            <span class="image-caption">
+              SolidWorks CAD of the CoreXY gantry.
+            </span>
+          </div>
+
+          <!-- YOUR IMAGE: Gantry prototype -->
+          <div class="gallery-image-container less-width">
+            <img
+              src="../assets/images/capstone/gantry prototype.jpg"
+              class="gallery-image"
+              alt="CoreXY gantry prototype">
+            <span class="image-caption">
+              Prototype of the assembled CoreXY motion system.
+            </span>
+          </div>
+
+          <div class="body-text">
+            The final gantry was designed to provide smooth and repeatable
+            motion while remaining compact enough to fit underneath the
+            playing surface.
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- PIECE DETECTION -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">Hall-Effect Piece Detection</div>
+
+        <div class="project-details-content">
+
+            <ul class="body-text">
+                <li>Each chess piece contains a permanent magnet positioned at a specific height.</li>
+                <li>Hall-effect sensors beneath each square measure the resulting magnetic field to determine whether a square is occupied and distinguish between black and white pieces.</li>
+                <li>Four Hall-effect sensors were placed beneath each tile to reduce errors caused by pieces being slightly off-center.</li>
+                <li>Multiplexers were used to collect the large number of sensor signals, with STM32 microcontrollers processing the data.</li>
+                <li>The original design aimed to identify all twelve chess piece types using different magnet heights.</li>
+                <li>PCB design and manufacturing issues prevented reliable identification of individual piece types, so the final system used a simpler color-detection scheme.</li>
+                <li>The system was sensitive to the distance between the magnets and sensors. Slight warping of the final board surface changed this distance and occasionally caused incorrect piece-color detection.</li>
+            </ul>
+
+
+
+          <!-- YOUR IMAGE: Piece / sensor cross section -->
+          <div class="gallery-image-container less-width">
+            <img
+              src="../assets/images/capstone/piece detection.png"
+              class="gallery-image"
+              alt="Chess piece magnetic detection">
+            <span class="image-caption">
+              Magnetic piece detection concept.
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- MAGNETIC TOOLHEAD -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">Magnetic Toolhead</div>
+
+        <div class="project-details-content">
+
+            <ul class="body-text">
+                <li>Designed a magnetic toolhead to move pieces beneath the playing surface.</li>
+                <li>Compared permanent and electromagnets during prototyping.</li>
+                <li>Selected a permanent magnet to provide high force without continuous power consumption.</li>
+                <li>Used a servo-driven elevator to engage and disengage the magnet.</li>
+            </ul>
+
+          <!-- YOUR IMAGE: Toolhead CAD -->
+          <div class="gallery-image-container less-width">
+            <img
+              src="../assets/images/capstone/toolhead cad.jpg"
+              class="gallery-image"
+              alt="Magnetic toolhead CAD">
+            <span class="image-caption">
+              CAD of the magnetic toolhead and magnet elevator.
+            </span>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- ========================================================= -->
+      <!-- FINAL IMAGE GALLERY -->
+      <!-- ========================================================= -->
+
+      <div id="project-gallery">
+
+        <div class="subheader-text">Image Gallery</div>
+
+        <div class="project-gallery-content">
+
+          <!-- YOUR PHOTO: Project poster -->
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/capstone/hero.jpg"
+              class="gallery-image"
+              alt="Knightly project poster">
+            <span class="image-caption">
+              
+            </span>
+          </div>
+
+          <!-- YOUR PHOTO -->
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/capstone/gallery 01.jpg"
+              class="gallery-image"
+              alt="Knightly project">
+            <span class="image-caption">
+            </span>
+          </div>
+
+          <!-- YOUR PHOTO -->
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/capstone/gallery 02.jpg"
+              class="gallery-image"
+              alt="Knightly project">
+            <span class="image-caption">
+            </span>
+          </div>
+
+          <!-- YOUR PHOTO -->
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/capstone/gallery 03.jpg"
+              class="gallery-image"
+              alt="Knightly project">
+            <span class="image-caption">
+            </span>
+          </div>
+
+          <!-- YOUR PHOTO -->
+          <div class="gallery-image-container half-width">
+            <img
+              src="../assets/images/capstone/gallery 04.jpg"
+              class="gallery-image"
+              alt="Knightly project">
+            <span class="image-caption">
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- PROJECT WEBSITE - FINAL CTA -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">Learn More</div>
+
+        <div class="project-details-content">
+
+          <div class="body-text">
+            Knightly is an open-source project. The full project website
+            contains additional documentation, CAD, software, electronics,
+            and resources for the design.
+          </div>
+
+          <div style="margin-top: 20px;">
+            <a class="button"
+               href="https://andrewy.wang/knightly/"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="button-text">Visit the Knightly Project Website →</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
 
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
 
-	</body>
+    <div id="footer">
+      <!-- Keep footer consistent with the rest of the portfolio -->
+    </div>
+
+  </body>
 </html>
