@@ -1,253 +1,464 @@
-
-
-<!-- 
-  IMPORTANT! 
-  
-  Keep this file unchanged to use as a template for all future project pages. 
-
-  For every new project you add to your portfolio, make a copy of this file in the
-  'project-pages' folder with a name related to the project.
--->
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-    <!-- 
-      TODO
 
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
+  <head>
+    <meta charset="utf-8">
 
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
-     <link rel="icon" href="../assets/images/DSC02131.jpg" />
-     <title>Yakov's Portfolio</title>
+    <link rel="icon" href="../assets/images/DSC02131.jpg" />
+    <title>Yakov's Portfolio</title>
     <meta name="description" content="My portfolio.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/utilities.css">
+    <script defer src="../js/script.js"></script>
+  </head>
 
-		<script defer src="../js/script.js"></script>
-	</head>
-	<body>
+  <body>
+
     <!-- NAVBAR -->
     <div class="navbar">
-    <div class="nav-left">
-      <div class="dropdown">
+      <div class="nav-left">
 
-        <!-- Home -->
-        <a href="/" class="nav-title-link">
-          <span class="nav-title">Home Page ▾</span>
-        </a>
+        <div class="dropdown">
 
-        <div class="dropdown-menu">
+          <!-- Home -->
+          <a href="/" class="nav-title-link">
+            <span class="nav-title">Home Page ▾</span>
+          </a>
 
-          <!-- UCSB Projects -->
-          <div class="submenu">
-            <a href="#ucsb-projects" class="submenu-title">
-              UCSB Projects ▸
-            </a>
-            <div class="submenu-menu">
-              <a href="./capstone.html">Senior Capstone</a>
-              <a href="./undergraduate-research.html">Undergraduate Research</a>
-              <a href="./lego-robotics.html">Lego Robotics</a>
-              <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
-              <a href="./steering-wheel.html">FSAE Steering Wheel</a>
-              <a href="./cad-cam.html">CAD/CAM Class</a>
-              <a href="./mechanical-testing.html">Materials Testing</a>
-              <a href="./gaucho-racing.html">Gaucho Racing</a>
+          <div class="dropdown-menu">
+
+            <!-- UCSB Projects -->
+            <div class="submenu">
+              <a href="#ucsb-projects" class="submenu-title">
+                UCSB Projects ▸
+              </a>
+
+              <div class="submenu-menu">
+                <a href="./capstone.html">Senior Capstone</a>
+                <a href="./undergraduate-research.html">Undergraduate Research</a>
+                <a href="./lego-robotics.html">Lego Robotics</a>
+                <a href="./automatic-bike-shifter.html">Automatic Bike Shifter</a>
+                <a href="./steering-wheel.html">FSAE Steering Wheel</a>
+                <a href="./cad-cam.html">CAD/CAM Class</a>
+                <a href="./mechanical-testing.html">Materials Testing</a>
+                <a href="./gaucho-racing.html">Gaucho Racing</a>
+              </div>
             </div>
-          </div>
 
-          <!-- Personal Projects -->
-          <div class="submenu">
-            <a href="#personal-projects" class="submenu-title">
-              Personal Projects ▸
-            </a>
-            <div class="submenu-menu">
-              <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
-              <a href="./kumiko-lamp.html">Kumiko Lamp</a>
-              <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
-              <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+            <!-- Personal Projects -->
+            <div class="submenu">
+              <a href="#personal-projects" class="submenu-title">
+                Personal Projects ▸
+              </a>
+
+              <div class="submenu-menu">
+                <a href="./fencing-lame-tester.html">Fencing Lamé Tester</a>
+                <a href="./kumiko-lamp.html">Kumiko Lamp</a>
+                <a href="./cardboard-cat-scratcher.html">Cat Scratcher</a>
+                <a href="./fencing-electrical-tester.html">Fencing Testbox</a>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
+
+      <!-- Contact -->
+      <a class="button" href="mailto:y_shur@ucsb.edu">
+        <span class="button-text">Contact Me</span>
+      </a>
+
     </div>
 
-    <!-- Contact -->
-    <a class="button" href="mailto:y_shur@ucsb.edu">
-      <span class="button-text">Contact Me</span>
-    </a>
-  </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
 
       <!-- PROJECT HEADER -->
       <div id="project-header">
-          <!-- 
-            TODO
 
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
         <div class="main-title">My Undergraduate Research</div>
+
         <div class="body-text">
-          The work described in this page was done at the 
-          <a href="https://www.hawkeslab.com/" target="_blank" rel="noopener noreferrer"> UCSB Hawkes Lab
-          </a>, which focuses on soft robotics and control systems. This page is a work in progress, with more updates to come!
-        </div>        
-        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
+          The work described on this page was done at the
+          <a href="https://www.hawkeslab.com/" target="_blank" rel="noopener noreferrer">
+            UCSB Hawkes Lab
+          </a>,
+          which focuses on soft robotics and control systems. My work included experimental
+          testing of inflatable robots as well as simulations involving the dynamics and
+          control of objects in free flight.
+        </div>
+
       </div>
 
-      <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
+      <!-- ========================================================= -->
+      <!-- INFLATABLE ARM -->
+      <!-- ========================================================= -->
+
+      <div id="project-gallery">
+
+        <div class="subheader-text">Inflatable Arm Testing</div>
+
+        <div class="project-gallery-content">
+
+          <div class="body-text">
+            <ul>
+              <li>Tested different string-routing configurations for an inflatable arm.</li>
+              <li>Measured the force required to displace the arm under different configurations and loads.</li>
+              <li>Designed and 3D printed a base that allowed the arm to be securely fixed during testing.</li>
+              <li>Built a replacement arm after the original material degraded from repeated testing.</li>
+              <li>Investigated tubing and routing configurations to reduce friction in the string system.</li>
+            </ul>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/hawkes lab/mijail arm testing.jpg" class="gallery-image">
+            <span class="image-caption">
+              Example configuration used to test the inflatable arm. A force gauge was used
+              to measure the force required to displace the end of the arm with a known mass attached.
+            </span>
+          </div>
+
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/hawkes lab/linear rail.jpg" class="gallery-image">
+            <span class="image-caption">
+              Linear rail used to control the motion of the force gauge.
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- SHOE POD TESTING -->
+      <!-- ========================================================= -->
+
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+
+        <div class="subheader-text">Inflatable Shoe Pod Testing</div>
+
         <div class="project-details-content">
 
-          <div class="body-text">The first project I worked on was testing different configurations for strings on an inflatable arm. The goal for this was to quantify the force needed to 
-            accomplish lifting-related tasks of the arm, and minimize friction by optimizing string routing and selecting smooth tubing for the strings. As a part of this, I designed and 3D printed a base for 
-            the arm that could be fixed with clamps, and I also made a copy of the arm because the material of the arm degraded with repeated applications of tape. The arm was tested in a variety of 
-            configurations and tube arrangements with different masses attached to the end.
-          </div>
-          <div class="body-text">The goal of my second project was to make a jig for testing inflatable shoe pods and collecting data to be automatically processed in Matlab. I did this by designing an adapter for the 
-            linear rail guide of the force gauge. The adapter connected to four existing bolt holes, and was used to squish the pods using the force gauge to collect force data. Additionally, the internal pressure of 
-            the arm was measured using a pressure gauge, and these pressure readings were recorded by video.
-          </div>
-          <div class="body-text">My third project was improving the experimental setup of a tubular motor to be used for testing various sand jumper accessories. The most recent project I worked on at the time of 
-            writing was simulating a 2D coin flip. This was inspired by the paper on the 
-            <a href="https://la.disneyresearch.com/wp-content/uploads/Falling-with-Style-Sticking-the-Landing-by-Controlling-Spin-during-Ballistic-Flight-Paper.pdf" target="_blank" rel="noopener noreferrer"> 
-            Disney Brick</a>, and the paper on 
-            <a href="https://www.jstor.org/stable/2323340?origin=JSTOR-pdf" target="_blank" rel="noopener noreferrer"> The Probability of Heads</a>,
-            Heads. Both of these papers studied methods to predict the final orientation of a rotating object in freefall. In summary, the Disney Brick experienced freefall in the z axis (vertical direction) while 
-            rotating in the xy plane (horizontally); the objective of the brick was to slow down its rotational motion in order to land in a preferred position after some time. The brick was able to land correctly 
-            with different initial conditions using predictive control. The Probability of Heads paper was a more theoretical exploration of this concept, which in summary resulted in a neat graph that illustrated 
-            the result of a coin flip for various initial vertical and rotational speeds. 
+          <div class="body-text">
+            <ul>
+              <li>Designed an adapter for the linear rail guide of the force gauge.</li>
+              <li>Used the adapter to compress inflatable shoe pods and collect force data.</li>
+              <li>Measured internal pressure during testing and recorded the readings for later analysis.</li>
+              <li>Designed the setup to make testing faster and facilitate automated data processing in MATLAB.</li>
+            </ul>
           </div>
 
-          <div class="body-text"> Below are images detailing my work described above.
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/hawkes lab/linear rail mount 1 side.jpg" class="gallery-image">
+            <span class="image-caption">
+              Adapter designed to mount the inflatable shoe pod testing fixture to the force gauge.
+            </span>
           </div>
 
         </div>
       </div>
 
-      <!-- IMAGE GALLERY -->
+
+      <!-- ========================================================= -->
+      <!-- TUBULAR MOTOR -->
+      <!-- ========================================================= -->
+
       <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
+
+        <div class="subheader-text">Tubular Motor Testing</div>
+
         <div class="project-gallery-content">
-            <!-- 
-              TODO
 
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+          <div class="body-text">
+            <ul>
+              <li>Improved the experimental setup for a tubular motor used to test sand-jumper accessories.</li>
+              <li>Designed and fabricated a two-piece adjustable motor mount.</li>
+              <li>Used brass inserts and set screws to secure the motor in the mount.</li>
+              <li>Allowed the motor to be rotated continuously or positioned in 5° increments.</li>
+            </ul>
+          </div>
 
-              Full Width Image:
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/hawkes lab/motor mount two parts.jpg" class="gallery-image">
+            <span class="image-caption">
+              Two-piece motor mount. The two halves fit together with a loose fit and are
+              secured using set screws through brass inserts.
+            </span>
+          </div>
 
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/mijail arm testing.jpg" class="gallery-image">
-              <span class="image-caption">This is an exmaple configuration in which the arm was tested. I measured the force needed to displace the tip of the arm with a known mass attached using a force gauge 
-                attached to a string leading to the member of the arm.
-              </span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/linear rail.jpg" class="gallery-image">
-              <span class="image-caption">This is the linear rail used for controlling the motion of a force gauge.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/linear rail mount 1 side.jpg" class="gallery-image">
-              <span class="image-caption">This is the mount I made for testing the inflatable shoe pods. Overall, the testing process was sped up significantly using my new setup.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/motor mount two parts.jpg" class="gallery-image">
-              <span class="image-caption">This is the motor mount I made for the tubular motor. The two halves fit together with a loose fit, and are fixed with two set screws that go through brass inserts on the 
-                motor-half of the mount. Using the set screws and the white markings on the base of the mount, the motor can be rotated continuously or in 5 degree increments.
-              </span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/motor mount monted low.jpg" class="gallery-image">
-              <span class="image-caption">This is the tubular motor mounted above the sand bed.</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/hawkes lab/funny graph.jpg" class="gallery-image">
-              <span class="image-caption">This is the figure from the Probability of Heads paper. According to the paper, “The curves which separate the sets H and T, the preimages of heads and tails in the u, w 
-                plane of initial conditions, are shown …. The lowest strip, adjacent to the axes, belongs to H, the next to T and so on alternately.”
-              </span>
-            </div>
-            <div class="gallery-image-container">
-              <video class="project-video" controls>
-                <source src="../assets/images/hawkes lab/CoinFlipEuler.mp4" type="video/mp4">
-              </video>
-
-              <span class="image-caption"> This is an animation for a coin flipping in real time from a simulation I made in Matlab. The simulation was run for many combinations of intial rotational and vertical 
-                velocity.
-              </span>
-            </div>
-
-            <div class="gallery-image-container less-width">
-              <img src="../assets/images/hawkes lab/CoinFlipNormal.jpg" class="gallery-image">
-              <span class="image-caption">I was able to faithfully recreate the figure from the coin flip paper, demonstrating that the development of this simulation was possible. Additionally, I added a 
-                colormapping which related the angle of the coin to its initial conditions for flipping. This was done by tracking the final angle of the coin when it “fell” on the ground.
-              </span>
-            </div>
-
-            <div class="gallery-image-container">
-              <video class="project-video" controls>
-                <source src="../assets/images/hawkes lab/CoinFlipControlExclamationMark.mp4" type="video/mp4">
-              </video>
-
-              <span class="image-caption"> The next stage was to add two masses to the coin, and develop a controller that would extend the masses in order to land on only one side consistently, regardless of intial 
-                conditions. This works on the principle of conservation of angular momentum, similar to how gymnasts and figure skaters are able to slow themselves down after a spinning move by extending their arms. 
-                The controller I made starts predicting the final landing angle of the coin after it reaches its apex height, and extends the masses when the predicted angle is close to the desired final angle. The 
-                video shown above demonstrates this functionality.
-              </span>
-            </div>
-
-            <div class="gallery-image-container less-width">
-              <img src="../assets/images/hawkes lab/CoinFlipBangBangControl.jpg" class="gallery-image">
-              <span class="image-caption">A bang bang controller was successfully able to make the coin land on only one side for most initial conditions. Interestingly, it was not able to change the result of 
-                the coin toss for low initial rotational speeds, and low initial vertical speeds. The reason for this is that the masses are only able to move out with a bang bang controller, and so the coin is only 
-                able to slow down its rotation. If the coin already starts rotating slowly or does not gain enough height to impactfully influence the rotation due to “slow” initial conditions, the controller is 
-                unable to change the result with certainty.
-              </span>
-            </div>
-
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/hawkes lab/motor mount monted low.jpg" class="gallery-image">
+            <span class="image-caption">
+              Tubular motor mounted above the sand bed for testing.
+            </span>
+          </div>
 
         </div>
+      </div>
+
+
+      <!-- ========================================================= -->
+      <!-- COIN FLIP -->
+      <!-- ========================================================= -->
+
+      <div id="project-details">
+
+        <div class="subheader-text">Coin Flip Simulation</div>
+
+        <div class="project-details-content">
+
+          <div class="body-text">
+            I later began studying the dynamics and control of objects in ballistic flight.
+            This work was inspired by the
+            <a href="https://la.disneyresearch.com/wp-content/uploads/Falling-with-Style-Sticking-the-Landing-by-Controlling-Spin-during-Ballistic-Flight-Paper.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+              Disney Brick
+            </a>
+            and
+            <a href="https://www.jstor.org/stable/2323340?origin=JSTOR-pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+              The Probability of Heads
+            </a>.
+          </div>
+
+          <div class="body-text">
+            <ul>
+              <li>Developed a MATLAB simulation of a rotating coin during ballistic flight.</li>
+              <li>Investigated how initial vertical velocity and angular velocity affect the final landing orientation.</li>
+              <li>Recreated the results from <i>The Probability of Heads</i> using a numerical simulation.</li>
+              <li>Studied the relationship between initial conditions and the final orientation of the coin.</li>
+            </ul>
+          </div>
+
+          <div class="gallery-image-container">
+            <video class="project-video" controls>
+              <source src="../assets/images/hawkes lab/CoinFlipEuler.mp4" type="video/mp4">
+            </video>
+
+            <span class="image-caption">
+              MATLAB simulation of a rotating coin in ballistic flight. The simulation
+              shows the coin's motion from launch until it reaches the ground.
+            </span>
+          </div>
+
+          <div class="gallery-image-container less-width">
+            <img src="../assets/images/hawkes lab/CoinFlipNormal.jpg" class="gallery-image">
+            <span class="image-caption">
+              Reproduction of the figure from <i>The Probability of Heads</i>, showing how
+              different initial vertical and rotational velocities affect the final result
+              of a coin flip. The added color mapping represents the final orientation of
+              the simulated coin.
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+
+    <!-- ========================================================= -->
+    <!-- BANG-BANG CONTROLLED COIN -->
+    <!-- ========================================================= -->
+
+    <div id="project-details">
+
+      <div class="subheader-text">Controlled Coin with Bang-Bang Controller</div>
+
+      <div class="project-details-content">
+
+        <div class="body-text">
+          The next stage was to investigate whether the final orientation of the coin could
+          be actively controlled during free flight. I added two movable masses to the coin
+          and developed a controller that changes the coin's rotational speed by extending
+          the masses. This approach is based on conservation of angular momentum and the
+          same principle that allows gymnasts and figure skaters to change their rotational
+          speed by moving their arms or legs.
+        </div>
+
+        <div class="body-text">
+          <ul>
+            <li>Added two movable masses to the coin to control its moment of inertia.</li>
+            <li>Used conservation of angular momentum to change the coin's rotational velocity.</li>
+            <li>Developed a bang-bang controller that extends the masses to slow the coin's rotation.</li>
+            <li>Used the predicted landing angle to determine when the masses should be extended.</li>
+            <li>Tested the controller across different initial rotational and vertical velocities.</li>
+            <li>Demonstrated that the controller could make the coin land on the desired side for most initial conditions.</li>
+            <li>Investigated the limitations of the controller at low initial rotational and vertical velocities.</li>
+          </ul>
+        </div>
+
+        <!-- Bang-bang controller simulation -->
+        <div class="gallery-image-container">
+          <video class="project-video" controls>
+            <source src="../assets/images/hawkes lab/CoinFlipControlExclamationMark.mp4" type="video/mp4">
+          </video>
+
+          <span class="image-caption">
+            Simulation of the controlled coin. The controller predicts the final landing
+            angle and extends the two masses to change the coin's rotational speed before impact.
+          </span>
+        </div>
+
+        <!-- Bang-bang controller results -->
+        <div class="gallery-image-container less-width">
+          <img src="../assets/images/hawkes lab/CoinFlipBangBangControl.jpg" class="gallery-image">
+
+          <span class="image-caption">
+            Results from the bang-bang controller. The controller was able to control the
+            landing side for most initial conditions, but was unable to reliably change the
+            outcome when both the initial rotational and vertical velocities were low.
+          </span>
+        </div>
+
       </div>
     </div>
 
 
 
-	</body>
+    <!-- ========================================================= -->
+    <!-- CONTROLLED COIN -->
+    <!-- ========================================================= -->
+
+    <div id="project-details">
+
+      <div class="subheader-text">Controlled Coin with Reaction Ring</div>
+
+      <div class="project-details-content">
+
+        <div class="body-text">
+          The next stage of the project was to investigate whether the final orientation
+          of the coin could be actively controlled during flight. I added a rotating ring
+          around the coin and used its angular momentum to influence the coin's rotation.
+        </div>
+
+        <div class="body-text">
+          <ul>
+            <li>Added a controllable rotating ring to the coin simulation.</li>
+            <li>Used conservation of angular momentum to change the coin's rotational velocity.</li>
+            <li>Developed a controller that modifies the ring's angular velocity after the coin reaches its apex.</li>
+            <li>Used the predicted landing orientation to determine the desired control response.</li>
+            <li>Tested the controller across a large range of initial conditions.</li>
+            <li>Simulated 40,000 combinations of initial vertical velocity and angular velocity.</li>
+            <li>Investigated how the coin's radius affects the controllability and outcome of the system.</li>
+            <li>Analyzed the change in kinetic energy during controlled flips.</li>
+          </ul>
+        </div>
+
+        <!-- Controlled coin simulation -->
+        <div class="gallery-image-container">
+          <video class="project-video" controls>
+            <source src="../assets/images/hawkes lab/CoinFlipRingPID.mp4" type="video/mp4">
+          </video>
+
+          <span class="image-caption">
+            Simulation of the coin with a controllable rotating ring. The ring changes
+            the coin's angular velocity during flight to influence its final orientation.
+          </span>
+        </div>
+
+        <!-- Initial condition outcome map -->
+        <div class="gallery-image-container less-width">
+          <img src="../assets/images/hawkes lab/CoinFlipWithRingPIDControl.png" class="gallery-image">
+
+          <span class="image-caption">
+            Simulation results across 40,000 combinations of initial vertical velocity
+            and angular velocity. The plot shows the resulting landing orientation of
+            the controlled coin.
+          </span>
+        </div>
+
+        <!-- Radius study -->
+        <div class="gallery-image-container less-width">
+          <img src="../assets/images/hawkes lab/3d results plot.png" class="gallery-image">
+
+          <span class="image-caption">
+            Sliced 3D plot showing the effect of the coin's radius on the final outcome.
+            Initial vertical velocity and angular velocity are shown on the horizontal
+            axes, while the coin radius is varied along the third axis.
+          </span>
+        </div>
+
+        <!-- Energy study -->
+        <div class="gallery-image-container less-width">
+          <img src="../assets/images/hawkes lab/energyRatio.png" class="gallery-image">
+
+          <span class="image-caption">
+            3D plot showing the ratio of final kinetic energy to initial kinetic energy
+            for the controlled coin across different initial conditions.
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- REACTION WHEEL CUBE -->
+    <!-- ========================================================= -->
+
+    <div id="project-details">
+
+      <div class="subheader-text">Reaction-Wheel Cube</div>
+
+      <div class="project-details-content">
+
+        <div class="body-text">
+          The next step was to extend the controlled coin problem into three dimensions.
+          I developed a MATLAB simulation of a cube equipped with three reaction wheels.
+          The objective was to control the cube's attitude during free flight and land
+          on a desired face.
+        </div>
+
+        <div class="body-text">
+          <ul>
+            <li>Developed a 3D rigid-body simulation of a cube in ballistic flight.</li>
+            <li>Modeled three reaction wheels for controlling the cube's attitude.</li>
+            <li>Used quaternions to represent and integrate the cube's 3D orientation.</li>
+            <li>Developed a PD attitude controller based on quaternion orientation error.</li>
+            <li>Controlled the cube's orientation while it was in free flight.</li>
+            <li>Tested different initial angular displacements and angular velocities.</li>
+            <li>Demonstrated controlled landings on a desired face across different initial conditions.</li>
+          </ul>
+        </div>
+
+        <!-- Main cube simulation -->
+        <div class="gallery-image-container">
+          <video class="project-video" controls>
+            <source src="../assets/images/hawkes lab/pd_controlled_cube.mp4" type="video/mp4">
+          </video>
+
+          <span class="image-caption">
+            3D MATLAB simulation of the reaction-wheel-controlled cube. The controller
+            changes the cube's attitude during free flight so that it lands on the desired face.
+          </span>
+        </div>
+
+        <!-- Cube angle and angular velocity plot -->
+        <div class="gallery-image-container less-width">
+          <img src="../assets/images/hawkes lab/pd control.png" class="gallery-image">
+
+          <span class="image-caption">
+            Cube attitude and angular velocity throughout the controlled flight.
+            The time histories show how the controller changes the cube's orientation
+            and angular velocity before landing.
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </body>
 </html>
+
